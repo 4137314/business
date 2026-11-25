@@ -67,6 +67,7 @@ Draw resources → capabilities → advantage; classify three resource types; st
 the three durability conditions; explain why Porter and RBV must be integrated.
 
 * Picture
+#+CAPTION: The resource-based view: tangible, intangible and human resources combine into capabilities, which yield a lasting competitive advantage when durable, non-transferable and non-replicable.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbviolet,align=center,minimum width=3.6cm,minimum height=0.8cm}]
 \node[b,draw=kbamber] (v) at (0,3) {Competitive advantage};
 \node[b] (c) at (0,1.5) {Capabilities\\(organizational routines)};

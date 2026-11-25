@@ -79,6 +79,7 @@ Draw the value chain from memory with five primary and four support activities;
 draw the airline strategic map and name its four groups.
 
 * Picture
+#+CAPTION: Porter's value chain: primary activities from inbound logistics to after-sales service, support activities from infrastructure to procurement, and the margin they create.
 \begin{tikzpicture}[font=\scriptsize]
 \draw[kbcyan] (0,0)--(10,0)--(11.5,2.5)--(10,5)--(0,5)--cycle;
 \foreach \y/\t in {4.55/Firm infrastructure,3.95/Human resource management,3.35/Technology development,2.75/Procurement}{\draw[kbguide] (0,\y-0.3)--(10.2,\y-0.3); \node at (5,\y) {\t};}

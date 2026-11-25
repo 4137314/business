@@ -61,6 +61,7 @@ Give the sigma/DPMO table; map DMAIC on PDCA; draw a fishbone with four
 categories.
 
 * Picture
+#+CAPTION: A fishbone (Ishikawa) diagram for returned toner cartridges, with causes grouped under people, systems, materials and processes.
 \begin{tikzpicture}[font=\scriptsize]
 \draw[thick,->] (0,0)--(8,0) node[right,align=left] {toner cartridges\\returned};
 \foreach \x/\t in {1.5/people,4.5/systems}{\draw (\x,1.4)--(\x+1.4,0); \node[above] at (\x,1.4) {\t};}

@@ -50,6 +50,7 @@ Write the five ratios; decompose ROI; redo the course example with the correct
 invested capital.
 
 * Picture
+#+CAPTION: The DuPont decomposition: return on investment equals return on sales times capital turnover.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.6cm,minimum height=0.8cm}]
 \node[b,draw=kbamber] (roi) at (0,0) {ROI\\EBIT / IC};
 \node[b] (ros) at (4,1) {ROS\\EBIT / sales};

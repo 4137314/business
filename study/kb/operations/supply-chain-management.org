@@ -84,6 +84,7 @@ Define SCM and its goal; list SCOR processes, six outcomes and the conflicting
 objectives table; explain cross docking and VMI.
 
 * Picture
+#+CAPTION: A supply chain from suppliers through manufacturer, warehouse and retailer to the customer: products flow downstream, information, money and returns upstream.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,minimum width=1.9cm,minimum height=0.8cm}]
 \node[b] (s) at (0,0) {Suppliers}; \node[b] (m) at (3,0) {Manufacturer}; \node[b] (w) at (6,0) {Warehouse}; \node[b] (r) at (9,0) {Retailer}; \node[b] (c) at (12,0) {Customer};
 \draw[->,thick] (s)--(m); \draw[->,thick] (m)--(w); \draw[->,thick] (w)--(r); \draw[->,thick] (r)--(c);

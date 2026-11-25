@@ -71,6 +71,7 @@ Write the formula; recompute Supplier 1 and Supplier A; explain why A wins in
 example 2 even with the worst quality.
 
 * Picture
+#+CAPTION: Weighted vendor scores of suppliers A, B and C: A ranks first with 3.71.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[xbar,width=8cm,height=4.5cm,xmin=0,xmax=5,symbolic y coords={C,B,A},ytick=data,xlabel={weighted score (example 2)},nodes near coords,bar width=10pt]
 \addplot[fill=kbcyan] coordinates {(3.35,C) (2.99,B) (3.71,A)};

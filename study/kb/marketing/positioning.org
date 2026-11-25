@@ -71,6 +71,7 @@ Draw the chocolate map; list Slack's four zones with action; name the five
 SERVQUAL gaps; explain the A300 positioning.
 
 * Picture
+#+CAPTION: A perception map of airliners by passenger capacity and range (B737, A300, B747) showing an uncovered gap in the market.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[->] (0,0)--(7,0); \node at (3.5,-0.9) {operating range (thousand km)};
 \draw[->] (0,0)--(0,4.5) node[above] {passenger capacity};

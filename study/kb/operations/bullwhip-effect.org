@@ -53,6 +53,7 @@ Define bullwhip; list five performance effects and five countermeasures; work
 the three-stage example.
 
 * Picture
+#+CAPTION: The bullwhip effect: a small step in consumer demand grows into larger swings in retailer and then wholesaler orders.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[width=9cm,height=5cm,xlabel={week},ylabel={units},legend pos=north west,ymin=0,ymax=240]
 \addplot[mark=*] coordinates {(1,100) (2,100) (3,120) (4,100)}; \addlegendentry{consumer}

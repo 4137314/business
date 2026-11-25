@@ -63,6 +63,7 @@ Run forward and backward passes on the KM network; name the critical path;
 explain float sharing between a and d; define crashing and cost slope.
 
 * Picture
+#+CAPTION: An activity network with durations in days: the critical path b–e–f takes 57 days and sets the project duration.
 \begin{tikzpicture}[font=\small,>={Stealth},box/.style={draw,rounded corners,minimum width=1.3cm,minimum height=0.75cm}]
 \node[box] (a) at (0,1.2) {a 10}; \node[box,draw=kbmagenta] (b) at (0,-1.2) {b 17};
 \node[box] (c) at (3,2) {c 5}; \node[box] (d) at (3,0.3) {d 5};

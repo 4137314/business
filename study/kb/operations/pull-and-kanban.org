@@ -58,6 +58,7 @@ Contrast push and pull; explain Kanban's five steps; compute ITAT for two queue
 sizes; draw the river and rocks.
 
 * Picture
+#+CAPTION: Pull production with kanban: the downstream station's consumption sends a card upstream, which authorises producing the next unit.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \node[draw=kbcyan,minimum width=2cm,minimum height=0.9cm] (u) at (0,0) {Upstream};
 \node[draw=kbcyan,minimum width=2cm,minimum height=0.9cm] (d) at (5,0) {Downstream};

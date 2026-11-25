@@ -89,6 +89,7 @@ advantage and four differentiation instruments; state the three exceptions to
 "one strategy only".
 
 * Picture
+#+CAPTION: Porter's generic strategies: cost leadership, differentiation, cost focus and differentiation focus; a firm doing neither is stuck in the middle.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
 \node at (2,4.35) {Low cost}; \node at (6,4.35) {Differentiation};

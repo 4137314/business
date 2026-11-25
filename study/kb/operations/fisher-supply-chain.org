@@ -70,6 +70,7 @@ List six product features; fill the efficient vs responsive table; draw the
 2×2 match matrix.
 
 * Picture
+#+CAPTION: Fisher's matrix: functional products need efficient supply chains and innovative products responsive ones; the other two combinations are mismatches.
 \begin{tikzpicture}[font=\small]
 \draw[kbcyan] (0,0) rectangle (6,4); \draw (3,0)--(3,4); \draw (0,2)--(6,2);
 \node at (1.5,4.3) {Efficient}; \node at (4.5,4.3) {Responsive};

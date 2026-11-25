@@ -65,6 +65,7 @@ Tell the Hawthorne story in three sentences; draw Maslow's pyramid; give two
 hygiene factors and two motivators; rank Likert's four styles by delegation.
 
 * Picture
+#+CAPTION: Maslow's hierarchy of needs, from physiological to self-actualisation: higher needs motivate once the lower ones are met.
 \begin{tikzpicture}[font=\small]
 \draw[kbcyan] (0,0)--(8,0)--(4,5)--cycle;
 \foreach \y/\t in {0.5/Physiological,1.5/Safety,2.5/Belonging,3.4/Esteem,4.25/Self-act.}{\node at (4,\y) {\t};}

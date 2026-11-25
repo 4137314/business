@@ -106,6 +106,7 @@ and explain the chain lever → internal non-cost performance → external
 performance → revenue → profit.
 
 * Picture
+#+CAPTION: From levers to performance: operating levers drive internal cost and non-cost performance, which drive customer satisfaction, revenue and profitability.
 \begin{tikzpicture}[font=\small,>={Stealth},box/.style={draw=kbcyan,rounded corners,align=center,minimum height=0.9cm,text width=3.2cm}]
 \node[box] (lev) at (0,0) {Operating levers\\technological, organizational, managerial};
 \node[box] (nc) at (4.6,0.9) {Internal non-cost\\quality, time, flexibility};

@@ -48,6 +48,7 @@ Define the three metrics; compute CV, SV, CPI, SPI for the example; explain why
 "spent less than planned" can be bad news.
 
 * Picture
+#+CAPTION: Earned-value curves: planned value (BCWS), actual cost (ACWP) and earned value (BCWP) over time, whose gaps give the cost and schedule variances.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[width=9cm,height=5cm,xlabel={week},ylabel={EUR thousand},xmin=0,xmax=20,ymin=0,ymax=210,legend pos=north west]
 \addplot[domain=0:20,kbcyan,thick] {200/(1+exp(-0.45*(x-10)))}; \addlegendentry{BCWS}

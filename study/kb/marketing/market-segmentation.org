@@ -104,6 +104,7 @@ List the five segment requirements and the bases table; run the telephone
 example from 8 to 10 segments; match the three options to Porter's strategies.
 
 * Picture
+#+CAPTION: Segmenting by age bracket and type of offer: of the eight cells one is not significant, leaving seven segments.
 \begin{tikzpicture}[font=\small]
 \node at (1,5) {age \(\times\) offer};
 \draw[kbcyan] (0,0) grid[step=1] (2,4);

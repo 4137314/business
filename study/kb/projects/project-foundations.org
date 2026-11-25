@@ -106,6 +106,7 @@ Define programme/project/task and the PMBOK definition; list the four variables,
 three phases and three difficulty drivers; build the KM-system WBS.
 
 * Picture
+#+CAPTION: Gantt chart of an IT roll-out: six activities from training users to modification, placed in time by their dependencies.
 \begin{tikzpicture}[font=\scriptsize]
 \begin{axis}[xbar,xmin=0,xmax=60,width=10cm,height=5.5cm,y dir=reverse,ytick={1,...,6},yticklabels={a train users,b install,c specify training,d screen design,e pilot test,f modify},xlabel={days},bar width=6pt,stack plots=x]
 \addplot[draw=none,fill=none] coordinates {(0,1) (0,2) (10,3) (10,4) (17,5) (42,6)};

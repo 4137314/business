@@ -93,6 +93,7 @@ Draw SWOT with its two analyses; list PESTLE; compute a weighted score; draw
 GE-McKinsey with its three zones.
 
 * Picture
+#+CAPTION: The GE–McKinsey matrix: market attractiveness against competitive position, with zones to invest, be selective or harvest; the dot is a business at (3.90; 3.45).
 \begin{tikzpicture}[font=\scriptsize]
 \foreach \x/\y in {2/2.4,4/2.4,4/1.2}{\fill[kbgreen,opacity=0.35] (\x,\y) rectangle ++(2,1.2);}
 \foreach \x/\y in {0/2.4,2/1.2,4/0}{\fill[kbamber,opacity=0.35] (\x,\y) rectangle ++(2,1.2);}

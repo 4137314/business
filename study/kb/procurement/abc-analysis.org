@@ -53,6 +53,7 @@ does not measure risk. Class limits are conventions, not laws.
 Run the four steps on the table; draw the curve; say why 64R and 89Q are A.
 
 * Picture
+#+CAPTION: The Pareto curve of ABC analysis: a few class-A suppliers account for most of the spend, many class-C suppliers for little.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[width=8cm,height=5.5cm,xlabel={cumulative \% of suppliers},ylabel={cumulative \% of spend},xmin=0,xmax=100,ymin=0,ymax=100]
 \addplot[mark=*] coordinates {(0,0) (10,68) (20,80) (30,85) (40,89) (50,91) (60,93) (70,95) (80,97) (90,98.5) (100,100)};

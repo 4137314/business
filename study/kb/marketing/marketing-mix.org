@@ -99,6 +99,7 @@ components of brand equity; compare vertical, franchise and horizontal systems;
 list the five promotion tools.
 
 * Picture
+#+CAPTION: The progression of economic value from commodity through product and service to experience: more differentiation and a higher price.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[->] (0,0)--(8,0) node[below left] {price: market \(\rightarrow\) premium};
 \draw[->] (0,0)--(0,4) node[above] {differentiation};

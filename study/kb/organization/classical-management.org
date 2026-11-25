@@ -87,6 +87,7 @@ principles and seven mechanisms, Fayol's six functions, Weber's five elements,
 and one critique of Taylor.
 
 * Picture
+#+CAPTION: Schools of organisation theory, ordered from deterministic to possibilistic and from the individual to the system: classical, human relations, functionalism and contingency.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
 \node at (2,4.35) {Deterministic}; \node at (6,4.35) {Possibilistic};

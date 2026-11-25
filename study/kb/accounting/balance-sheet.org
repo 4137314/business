@@ -70,6 +70,7 @@ List the asset classes A–D and liability classes A–E; replay the Inventata s
 events and compute totals after each.
 
 * Picture
+#+CAPTION: A balance sheet in two columns: assets of 25,600 (fixed assets, stock, receivables, cash) equal the loan plus equity, which includes the year's profit.
 \begin{tikzpicture}[font=\small]
 \draw[kbcyan] (0,0) rectangle (8,4); \draw[kbcyan] (4,0)--(4,4);
 \node at (2,4.3) {Assets 25,600}; \node at (6,4.3) {Liabilities + equity 25,600};

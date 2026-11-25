@@ -62,6 +62,7 @@ List the 5S in Japanese and English; five implementation steps; explain
 heijunka with a mixed-model sequence.
 
 * Picture
+#+CAPTION: Production levelling (heijunka): batch production of one product per day against a levelled mix of all products every day.
 \begin{tikzpicture}[font=\scriptsize]
 \node at (2.5,2.6) {batch}; \node at (8.5,2.6) {levelled};
 \foreach \d/\h/\c in {0/2/kbcyan,1/2/kbcyan,2/2/kbamber,3/2/kbmagenta}{\fill[\c] (\d*1.1,0) rectangle (\d*1.1+0.9,\h);}

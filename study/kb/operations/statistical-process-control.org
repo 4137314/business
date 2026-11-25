@@ -49,6 +49,7 @@ Cp ignores centring (a shifted mean can fail with Cp > 1).
 State the 68/95/99.7 rule; compute Cp; list six patterns to investigate.
 
 * Picture
+#+CAPTION: A control chart of call times: points within the control limits UCL and LCL show common-cause variation only.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[width=9cm,height=5cm,xlabel={sample},ylabel={call time (s)},ymin=20,ymax=190,xmin=0,xmax=13]
 \addplot[kbguide,dashed,domain=0:13] {160}; \addplot[kbguide,dashed,domain=0:13] {40}; \addplot[kbguide,domain=0:13] {100};

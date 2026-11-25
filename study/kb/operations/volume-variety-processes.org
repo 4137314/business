@@ -61,6 +61,7 @@ follows volume–variety, not the industry name.
 Draw the diagonal with five manufacturing and three service types, with examples.
 
 * Picture
+#+CAPTION: The volume–variety matrix: process types along the diagonal; off the diagonal a process is too flexible (high cost) or too rigid (lost orders).
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[->] (0,0)--(8,0) node[below left] {volume};
 \draw[->] (0,0)--(0,5) node[above] {variety};

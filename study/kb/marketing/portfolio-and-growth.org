@@ -69,6 +69,7 @@ Draw BCG with the Apple products and the four actions; draw Ansoff with the
 Coca-Cola products and rank the strategies by risk.
 
 * Picture
+#+CAPTION: The BCG growth-share matrix with Apple's products as stars, question marks, cash cows and dogs; cash flows from the cows to finance stars and question marks.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[kbcyan] (0,0) rectangle (6,4); \draw (3,0)--(3,4); \draw (0,2)--(6,2);
 \node[align=center] at (1.5,3) {\textbf{Star}\\iPhone 15}; \node[align=center] at (4.5,3) {\textbf{Question mark}\\Apple TV};

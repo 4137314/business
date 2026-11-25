@@ -81,6 +81,7 @@ Draw the 4V table with cost implications; list six objectives; explain the
 sandcone; state Little's law.
 
 * Picture
+#+CAPTION: The four Vs of operations: low volume, high variety, high variation and high visibility raise unit cost; their opposites lower it.
 \begin{tikzpicture}[font=\small]
 \foreach \y/\l/\r in {3/{low volume}/{high volume},2.2/{high variety}/{low variety},1.4/{high variation}/{low variation},0.6/{high visibility}/{low visibility}}{
 \node[left] at (0,\y) {\l}; \node[right] at (6,\y) {\r}; \draw[kbguide,<->] (0,\y)--(6,\y);}

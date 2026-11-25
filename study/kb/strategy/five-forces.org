@@ -78,6 +78,7 @@ groups; can underrate core competences — combine with the value chain.
 Draw the five forces, give three determinants of each, rate them for Coca-Cola.
 
 * Picture
+#+CAPTION: Porter's five forces: rivalry among existing firms, set by the threat of new entrants, the bargaining power of suppliers and of buyers, and the threat of substitutes.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.8cm,minimum height=0.9cm}]
 \node[b,draw=kbamber] (r) at (0,0) {Rivalry among\\existing firms};
 \node[b] (e) at (0,2.2) {Threat of\\new entrants};

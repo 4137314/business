@@ -92,6 +92,7 @@ List eight B2B features; draw the six phases marking strategic/operational;
 explain GIGO and the supplier hierarchy.
 
 * Picture
+#+CAPTION: The industrial buying process: specification, supplier identification, selection and negotiation (strategic), then order, monitoring and evaluation (operational), feeding back to the vendor list.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth},p/.style={draw,rounded corners,align=center,text width=1.7cm,minimum height=0.9cm}]
 \foreach \i/\t in {0/Specifications,1/Identification,2/Selection and negotiation}{\node[p,draw=kbamber] (s\i) at (2.2*\i,0) {\t};}
 \foreach \i/\t in {3/Order,4/Monitoring,5/Follow-up evaluation}{\node[p,draw=kbcyan] (s\i) at (2.2*\i,0) {\t};}

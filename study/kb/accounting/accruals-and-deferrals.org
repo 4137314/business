@@ -45,6 +45,7 @@ Draw the rental timeline; classify the four cases for tenant and landlord with
 amounts.
 
 * Picture
+#+CAPTION: A cost spanning two financial years: paid in advance it leaves a deferral (risconto, 3/12 to the next year); paid in arrears it requires an accrual (rateo, 9/12 to this year).
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[thick] (0,0)--(12,0);
 \foreach \x/\t in {0/{1 Apr},9/{31 Dec},12/{31 Mar}}{\draw (\x,0.15)--(\x,-0.15) node[below] {\t};}

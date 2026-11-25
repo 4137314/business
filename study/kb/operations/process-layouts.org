@@ -49,6 +49,7 @@ a wrong process choice.
 Match four layouts to process types; give two pros and cons each.
 
 * Picture
+#+CAPTION: A functional layout, grouping machines by type so parts travel between departments, against a line layout with stations in process sequence.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \node at (1.5,3.2) {Functional};
 \foreach \x/\y/\t in {0/2/T,1.5/2/M,3/2/G,0/0.6/D,1.5/0.6/W,3/0.6/P}{\draw[kbcyan] (\x-0.4,\y-0.4) rectangle (\x+0.4,\y+0.4); \node at (\x,\y) {\t};}

@@ -66,6 +66,7 @@ Rebuild the three-column table from memory and explain why the saving beats the
 sales increase; compute the leverage for ROS = 4%.
 
 * Picture
+#+CAPTION: Return on assets of the base case, after a 10% rise in sales and after a 5% cut in material costs: the purchasing saving raises ROA more.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[ybar,width=8cm,height=5cm,ymin=0,ymax=20,symbolic x coords={Base,Sales +10\%,Materials -5\%},xtick=data,ylabel={ROA (\%)},nodes near coords,bar width=18pt,enlarge x limits=0.25]
 \addplot[fill=kbcyan] coordinates {(Base,13.98) (Sales +10\%,15.38) (Materials -5\%,17.74)};

@@ -53,6 +53,7 @@ determine power. Independence is not "safe": it makes collaboration hardest.
 Draw the power matrix with its two axes defined; place the four Fujimoto cases.
 
 * Picture
+#+CAPTION: Fujimoto's buyer–supplier dependence matrix: buyer dominance, supplier dominance, interdependence and independence.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
 \node[align=center] at (2,3) {\textbf{Buyer dominance}\\multi, dedicated};

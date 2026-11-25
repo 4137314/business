@@ -68,6 +68,7 @@ Draw the reclassified balance sheet; write MT, CCN, IL; compute them for ALFA
 and argue the loan decision.
 
 * Picture
+#+CAPTION: ALFA's reclassified balance sheet (EUR M): uses by liquidity (fixed assets, inventory, liquid assets) against sources by maturity (current and long-term liabilities, equity).
 \begin{tikzpicture}[font=\small]
 \draw[kbcyan] (0,0) rectangle (4,5); \draw[kbcyan] (5,0) rectangle (9,5);
 \fill[kbcyan,opacity=0.2] (0,0) rectangle (4,0.5); \node at (2,0.25) {Fixed AI 0.23};

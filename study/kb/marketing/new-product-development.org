@@ -89,6 +89,7 @@ Define concept/package/process; draw the five Stage-Gate phases; list the five
 failure reasons; explain MQB.
 
 * Picture
+#+CAPTION: The Stage-Gate process: concept generation, screening, preliminary design, evaluation and final design, each stage closed by a go/kill gate (G).
 \begin{tikzpicture}[font=\scriptsize,>={Stealth},s/.style={draw=kbcyan,rounded corners,align=center,text width=1.9cm,minimum height=1cm},g/.style={draw=kbamber,circle,inner sep=1pt}]
 \node[s] (a) at (0,0) {Concept generation};
 \node[g] (g1) at (1.6,0) {G};

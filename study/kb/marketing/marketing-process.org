@@ -105,6 +105,7 @@ expectations × experience matrix; list five orientations with examples;
 contrast strategic and operational marketing.
 
 * Picture
+#+CAPTION: The marketing process: understanding the market, a customer-driven strategy and an integrated programme create value for customers; profitable relationships capture value back.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,text width=2.3cm,minimum height=1.1cm}]
 \node[b] (a) at (0,0) {Understand market and needs};
 \node[b] (b) at (3,0) {Customer-driven strategy};

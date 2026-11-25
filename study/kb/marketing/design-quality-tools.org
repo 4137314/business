@@ -67,6 +67,7 @@ Sketch the house of quality and name its six parts; build one FMEA row with
 cause, prevention, detection, action and RPN.
 
 * Picture
+#+CAPTION: The House of Quality of QFD: customer needs and weights, technical characteristics, their relationship matrix, the correlation roof, competitive scores and technical targets.
 \begin{tikzpicture}[font=\scriptsize]
 \draw[kbcyan] (2,3)--(4.5,4.3)--(7,3); \node at (4.5,3.5) {roof: hows vs hows};
 \draw[kbcyan] (2,1) rectangle (7,3); \node at (4.5,2) {relationships};

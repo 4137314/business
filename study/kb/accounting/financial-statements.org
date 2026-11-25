@@ -78,6 +78,7 @@ the profit → equity link; say which statement answers "what do we owe?" and
 which "what did we earn?".
 
 * Picture
+#+CAPTION: The two financial statements: the income statement measures the year's profit from revenues and costs; the balance sheet lists assets, liabilities and equity at year end.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[kbcyan] (0,0) rectangle (3,3); \node at (1.5,3.3) {Income statement};
 \node at (1.5,2.3) {Revenues}; \node at (1.5,1.6) {\(-\) Costs}; \node[kbamber] at (1.5,0.6) {Profit (loss)};

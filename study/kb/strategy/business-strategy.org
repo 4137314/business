@@ -101,6 +101,7 @@ Define strategy and strategic fit; give the two questions and three levels;
 contrast strategy and tactics; summarize S-C-P → Porter → RBV.
 
 * Picture
+#+CAPTION: Two views of strategy: the Harvard structure–conduct–performance paradigm and Porter's, where the firm's competitive strategy mediates between industry structure and performance.
 \begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.6cm,minimum height=0.8cm}]
 \node[b] (s) at (0,2.4) {Industry structure};
 \node[b] (c) at (0,1.2) {Conduct};

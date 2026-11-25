@@ -51,6 +51,7 @@ Place the DP for the five strategies with an example each; define BOM, MPS,
 MRP, ERP; run a two-level MRP explosion.
 
 * Picture
+#+CAPTION: The order decoupling point along design, purchase, make, assemble and deliver: make-to-stock, assemble-to-order, make-to-order, purchase-to-order and engineer-to-order, upstream on forecast and downstream on order.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \foreach \i/\t in {0/Design,1/Purchase,2/Make,3/Assemble,4/Deliver}{\node[draw=kbcyan,minimum width=1.8cm] (n\i) at (2.2*\i,0) {\t};}
 \foreach \i [evaluate=\i as \j using int(\i+1)] in {0,...,3}{\draw[->] (n\i)--(n\j);}

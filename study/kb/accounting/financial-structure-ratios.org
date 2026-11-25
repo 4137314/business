@@ -47,6 +47,7 @@ Write ISP and IS with thresholds; compute them for ALFA; explain why financing
 a machine with short-term debt is risky even if profitable.
 
 * Picture
+#+CAPTION: Fixed-asset coverage ratios of ALFA in 2012: equity-based (IS) and including long-term debt (ISP), both well above 1.
 \begin{tikzpicture}[font=\small]
 \begin{axis}[xbar,width=8cm,height=4cm,xmin=0,xmax=3.5,symbolic y coords={IS,ISP},ytick=data,nodes near coords,bar width=10pt,xlabel={ALFA 2012}]
 \addplot[fill=kbcyan] coordinates {(2.78,ISP) (2.84,IS)};

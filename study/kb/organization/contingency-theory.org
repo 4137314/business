@@ -74,6 +74,7 @@ Name the four contingencies with author and finding; place Woodward's three
 technologies with the fitting structure.
 
 * Picture
+#+CAPTION: Contingency fit: mechanistic structures suit stable environments and organic ones dynamic, uncertain environments.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[->] (0,0)--(8,0) node[below left] {environmental uncertainty};
 \draw[->] (0,0)--(0,3.6) node[above] {fit};

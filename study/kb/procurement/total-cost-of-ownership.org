@@ -71,6 +71,7 @@ List pre-, transaction and post-transaction costs; reproduce the aluminium
 oxide table and explain why C wins.
 
 * Picture
+#+CAPTION: Total cost of ownership of competing offers: net price plus purification and financing, logistics and quality penalties (EUR thousand).
 \begin{tikzpicture}[font=\small]
 \begin{axis}[ybar stacked,width=8.5cm,height=5.5cm,ymin=0,ymax=200,symbolic x coords={A,B,C},xtick=data,ylabel={EUR thousand},legend style={at={(1.02,1)},anchor=north west},bar width=20pt]
 \addplot[fill=kbcyan] coordinates {(A,152) (B,156.9) (C,161.7)}; \addlegendentry{net price}

@@ -69,6 +69,7 @@ Define the three classes with novelty and uncertainty; list the eight phases;
 say where each class puts its emphasis.
 
 * Picture
+#+CAPTION: Buying situations by novelty and uncertainty: straight rebuy, modified rebuy and new task.
 \begin{tikzpicture}[font=\small,>={Stealth}]
 \draw[->] (0,0)--(6,0) node[below left] {novelty};
 \draw[->] (0,0)--(0,4) node[above] {uncertainty};

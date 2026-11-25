@@ -85,6 +85,7 @@ when-to-digitalize criteria; distinguish decision support and automation; cite
 the BLM and Novotic cases.
 
 * Picture
+#+CAPTION: The industrial revolutions on a timeline: steam (1780), electricity (1870), automation (1970), cyber-physical systems and IoT (2011) and human-centric Industry 5.0 (2020).
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \foreach \i/\y/\t in {0/1780/{1.0 steam},1/1870/{2.0 electricity},2/1970/{3.0 automation},3/2011/{4.0 CPS, IoT},4/2020/{5.0 human-centric}}{\fill[kbcyan] (2.4*\i,0) circle (3pt); \node[above] at (2.4*\i,0.15) {\y}; \node[below,align=center] at (2.4*\i,-0.15) {\t};}
 \draw[->] (-0.4,0)--(10.2,0);

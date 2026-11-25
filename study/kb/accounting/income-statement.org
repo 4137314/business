@@ -77,6 +77,7 @@ List sections A–D and key items; write the value-added cascade to net result;
 compute materials consumed.
 
 * Picture
+#+CAPTION: ALFA's value-added income statement: from production value through value added, EBITDA, EBIT and EBT to net income (EUR thousand).
 \begin{tikzpicture}[font=\small]
 \begin{axis}[ybar,width=10cm,height=5.5cm,ymin=0,ymax=560,symbolic x coords={Prod. value,Value added,EBITDA,EBIT,EBT,Net},xtick=data,ylabel={EUR thousand},nodes near coords,bar width=16pt,x tick label style={font=\scriptsize,rotate=25,anchor=north east}]
 \addplot[fill=kbcyan] coordinates {(Prod. value,520) (Value added,300) (EBITDA,100) (EBIT,70) (EBT,60) (Net,42)};

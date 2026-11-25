@@ -68,6 +68,7 @@ Write the value ratio; list the five job-plan phases with one question each;
 build the lighter FAST with How/Why.
 
 * Picture
+#+CAPTION: A FAST diagram of a lighter: reading left to right answers HOW a function is achieved, right to left WHY, from burning tobacco down to turning the ignition wheel.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth},f/.style={draw=kbcyan,align=center,text width=1.6cm,minimum height=0.7cm}]
 \node[f,draw=kbamber] (o) at (0,0) {Burn tobacco};
 \node[f] (g) at (2.4,0) {Generate flame};

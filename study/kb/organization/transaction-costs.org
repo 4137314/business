@@ -54,6 +54,7 @@ State the three variables, draw the market–hierarchy continuum with four
 intermediate forms, and list the four features of the lean organization.
 
 * Picture
+#+CAPTION: Governance forms between market and hierarchy: ad-hoc agreements, non-equity and equity joint ventures, mergers and acquisitions, with increasing control and integration.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \draw[<->,thick,kbcyan] (0,0)--(11,0);
 \node[above] at (0,0.1) {\small Market}; \node[above] at (11,0.1) {\small Hierarchy};

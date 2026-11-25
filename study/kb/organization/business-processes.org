@@ -75,6 +75,7 @@ Define process and process owner; list three advantages and the three limits of
 the process structure; list the five coordination mechanisms.
 
 * Picture
+#+CAPTION: A cross-functional process: new product development runs across the vertical functions from needs to product, under a process owner with end-to-end responsibility.
 \begin{tikzpicture}[font=\scriptsize,>={Stealth}]
 \foreach \x/\n in {0/R\&D,2.2/Engineering,4.4/Sales,6.6/Production}{\draw[kbcyan] (\x,0) rectangle (\x+1.9,3); \node at (\x+0.95,2.7) {\n};}
 \node at (4.25,3.4) {Functions (vertical silos)};
