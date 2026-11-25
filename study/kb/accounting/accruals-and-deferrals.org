@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       accruals-and-deferrals
+:DOMAIN:   accounting
+:AREA:     financial-statements
+:KIND:     definition
+:REQUIRES: financial-statements
+:SEE:      balance-sheet income-statement business-map
+:ALIASES:  ratei risconti rateo-attivo rateo-passivo risconto-attivo risconto-passivo
+:END:
+#+title: Accruals and deferrals across periods
+#+summary: Ratei record amounts that belong to the current period but are settled later; risconti defer amounts already settled that belong to later periods; both enforce the accrual principle for time-based items.
+
+* Definition
+For amounts whose service period straddles the year end:
+| Item            | Italian          | Settled | Belongs to        | Side      |
+|-----------------+------------------+---------+-------------------+-----------|
+| Accrued income  | rateo attivo     | later   | current period    | asset     |
+| Accrued expense | rateo passivo    | later   | current period    | liability |
+| Prepaid expense | risconto attivo  | already | following periods | asset     |
+| Deferred income | risconto passivo | already | following periods | liability |
+Rule of thumb: /rateo/ = matured now, cash later; /risconto/ = cash now, matures
+later. (Some material reverses the two verbal definitions; the rental examples
+and OIC 18 support the version above.)
+
+* Worked example
+Rent of an annual contract 1 April x – 31 March x+1; year end 31 December x:
+nine months belong to year x, three to year x+1.
+- *Rateo* (rent paid in arrears, on 31 March): landlord Y has collected nothing
+  on 31 December but has earned 3/4 of the rent → *accrued income* (rateo
+  attivo) for 3/4. With annual rent 12,000: 9,000. The tenant records an
+  accrued expense (rateo passivo) of 9,000.
+- *Risconto* (rent paid in advance, on 1 April): tenant Y paid 12 months but
+  used only 9 → the 3 remaining months are a credit towards next year: *prepaid
+  expense* (risconto attivo) 3,000; current rent expense 9,000. The landlord
+  records deferred income (risconto passivo) 3,000.
+
+* Pitfall
+First identify the party (tenant or landlord), the payment date and the service
+interval. The rateo here is nine months, the risconto three months — both
+measure the part on the "wrong" side of the year end relative to the cash.
+Ordinary unpaid invoices are payables, not ratei.
+
+* Recall
+Draw the rental timeline; classify the four cases for tenant and landlord with
+amounts.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[thick] (0,0)--(12,0);
+\foreach \x/\t in {0/{1 Apr},9/{31 Dec},12/{31 Mar}}{\draw (\x,0.15)--(\x,-0.15) node[below] {\t};}
+\draw[kbcyan,decorate,decoration={brace}] (0,0.3)--(9,0.3) node[midway,above] {9 months: year x};
+\draw[kbamber,decorate,decoration={brace}] (9,0.3)--(12,0.3) node[midway,above] {3 months: x+1};
+\node[kbmagenta,align=center] at (1,-1.1) {paid in advance\\\(\Rightarrow\) risconto 3/12};
+\node[kbmagenta,align=center] at (11,-1.1) {paid in arrears\\\(\Rightarrow\) rateo 9/12};
+\end{tikzpicture}
+Compare the payment date with the year end to choose rateo or risconto.

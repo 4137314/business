@@ -1,0 +1,85 @@
+:PROPERTIES:
+:ID:       positioning
+:DOMAIN:   marketing
+:AREA:     market-analysis
+:KIND:     definition
+:REQUIRES: targeting-and-swot
+:SEE:      quality-management marketing-mix business-map
+:ALIASES:  posizionamento mappa-delle-percezioni importance-performance SERVQUAL Airbus-A300
+:END:
+#+title: Positioning, perception maps and service gaps
+#+summary: Positioning decides how to compete in the chosen segment — customer-perceived value relative to price and to competitors — using perception maps, Slack's importance–performance matrix and SERVQUAL gap analysis.
+
+* Definition
+Once the segment is chosen: *how to compete inside it?* Strategic positioning
+combines (1) the *value perceived by customers relative to price* and (2) the
+customer's perception of how the offer compares with competitors'
+(*benchmarking*). Tools: perception maps, gap analysis, importance–performance.
+
+* Model
+** Perception maps
+Show graphically the product's position in customers' eyes on *pairs of
+attributes relevant to the purchase decision*; choosing the right attributes
+(for the product and the competitors) is essential.
+Example — *chocolate*: axes price (low → high) × quality (low → high).
+Premium bars (Lindt, dark Swiss chocolate) sit high-quality/high-price; Milka
+high quality at moderate price; Kinder Surprise near the centre; Twix and
+KitKat lower quality and lower price. Empty regions suggest gaps in the offer.
+
+** Importance–Performance matrix (Nigel Slack)
+Two variables: *performance* relative to competitors (1 = much better … 9 =
+much worse) and *objective importance* of the attribute in the segment
+(order-winning … qualifying … less important). Four zones:
+| Zone          | Meaning                                        | Action       |
+|---------------+------------------------------------------------+--------------|
+| Appropriate   | performance matches importance                 | maintain     |
+| Improve       | performance a bit below what importance needs  | improve      |
+| Urgent action | important attribute, performance worse than    | top priority |
+|               | competitors                                    |              |
+| Excess?       | performance far above an unimportant attribute | reallocate   |
+It shows which features are under- or over-sized and sets improvement priorities.
+
+** SERVQUAL gap analysis
+Parasuraman, Zeithaml and Berry (1988): multidimensional instrument capturing
+expectations and perceptions of a service on five dimensions (tangibles,
+reliability, responsiveness, assurance, empathy). Purpose: reduce the
+progressive distortion of perceptions along the chain and avoid management bias.
+| Gap | Between                                                  |
+|-----+----------------------------------------------------------|
+| 1   | customer expectations ↔ management perception of them    |
+| 2   | management perception ↔ service-quality specifications   |
+| 3   | specifications ↔ service actually delivered              |
+| 4   | service delivered ↔ external communications to customers |
+| 5   | expected service ↔ perceived service (the customer gap)  |
+Expected service is shaped by word of mouth, personal needs and past
+experience. Gap 5 is the result of gaps 1–4. See [[id:quality-management][quality]].
+
+* Worked example
+*Airbus A300*: map passenger capacity (100–500) × operating range (1–5 thousand
+km). Boeing's B737 occupied ~100 seats/short range, the B747 ~500 seats/long
+range: a large empty area existed in between. Airbus positioned the A300 in the
+medium-capacity (about 250–300 seats), short-to-medium-range gap — a market
+need no competitor served.
+
+* Pitfall
+Positioning lives in the customer's mind: it is not what the firm says about
+itself. A perception map is only as good as the attributes chosen. In Slack's
+matrix "excess" is a waste, not a strength to celebrate.
+
+* Recall
+Draw the chocolate map; list Slack's four zones with action; name the five
+SERVQUAL gaps; explain the A300 positioning.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[->] (0,0)--(7,0); \node at (3.5,-0.9) {operating range (thousand km)};
+\draw[->] (0,0)--(0,4.5) node[above] {passenger capacity};
+\foreach \x in {1,...,5}{\node[below] at (1.2*\x,0) {\x};}
+\node[left] at (0,0.6) {100}; \node[left] at (0,4) {500};
+\fill[kbcyan] (1.2,0.6) circle (3pt) node[right] {B737};
+\fill[kbcyan] (6,4) circle (3pt) node[left] {B747};
+\draw[kbamber,dashed] (1.6,1.4) rectangle (3.8,2.8);
+\fill[kbamber] (2.4,2.1) circle (3pt) node[right] {A300};
+\node[kbamber] at (2.7,3.1) {uncovered gap};
+\end{tikzpicture}
+Airbus placed the A300 where no existing aircraft met the airlines' need.

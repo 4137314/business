@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       profitability-ratios
+:DOMAIN:   accounting
+:AREA:     financial-analysis
+:KIND:     definition
+:REQUIRES: income-statement financial-structure-ratios
+:SEE:      purchasing-leverage business-map
+:ALIASES:  ROI ROS ROA ROE ROD redditività capitale-investito
+:END:
+#+title: ROS, ROI, ROA, ROE and financing cost
+#+summary: ROI measures operating return on invested capital, ROS return on sales, ROA on total assets, ROE on equity and ROD the cost of debt; ROI = ROS × turnover links margin and capital efficiency.
+
+* Model
+| Ratio | Formula                                 | Measures                       |
+|-------+-----------------------------------------+--------------------------------|
+| ROI   | EBIT (RO) / invested capital            | return on investments; quality |
+|       |                                         | of capital allocation          |
+| ROS   | EBIT / sales (course: prod. value net   | profit per euro of sales; cost |
+|       | of discounts, returns, allowances)      | control, management efficiency |
+| ROA   | EBIT / total assets (uses)              | efficiency of capital use      |
+| ROE   | net income / equity                     | return to owners               |
+| ROD   | financial charges / liabilities (net of | cost of debt: lower is better  |
+|       | equity)                                 |                                |
+\[ ROI = ROS \times \text{turnover} = \frac{EBIT}{\text{sales}} \times
+   \frac{\text{sales}}{\text{invested capital}} \]
+Invested capital must be defined explicitly: a common operating convention is
+operating assets minus non-interest-bearing operating liabilities. ("Assets
+minus all liabilities" equals equity, which is not an operating IC.) ROD with
+all liabilities understates the rate paid on interest-bearing debt.
+
+* Worked example
+*Course example*: revenue 3,000,000; operating costs 1,500,000; depreciation
+200,000 → RO = 1,300,000. Total assets 4,500,000; current liabilities
+1,200,000; short-term financial liabilities 300,000 (interest-bearing, so added
+back): invested capital = 4,500,000 − 1,200,000 + 300,000 = *3,600,000*.
+\[ ROI = \frac{1{,}300{,}000}{3{,}600{,}000} = 36.1\% \]
+(The printed calculation shows 3,000,000 and ROI 43.33% — an arithmetic slip:
+the stated items sum to 3,600,000.) Interpretation: each euro invested yields
+about 36 cents of operating income.
+*Simple case*: sales 1,000, EBIT 100, IC 500, total assets 800, equity 300,
+net income 60 → ROS 10%, turnover 2, ROI 20%, ROA 12.5%, ROE 20%.
+Link with purchasing: see [[id:purchasing-leverage][purchasing leverage]] (ROA = ROS × asset turnover).
+
+* Pitfall
+High ROE can come from leverage, not operations. ROI can rise with unchanged ROS
+if turnover rises. State whether averages or closing balances are used.
+
+* Recall
+Write the five ratios; decompose ROI; redo the course example with the correct
+invested capital.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.6cm,minimum height=0.8cm}]
+\node[b,draw=kbamber] (roi) at (0,0) {ROI\\EBIT / IC};
+\node[b] (ros) at (4,1) {ROS\\EBIT / sales};
+\node[b] (tur) at (4,-1) {Turnover\\sales / IC};
+\draw[->] (ros)--(roi); \draw[->] (tur)--(roi);
+\node at (2,0) {\(=\)}; \node at (4,0) {\(\times\)};
+\end{tikzpicture}
+Profitability comes from margins (ROS) and from capital efficiency (turnover).

@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       kraljic-matrix
+:DOMAIN:   procurement
+:AREA:     supplier-management
+:KIND:     model
+:REQUIRES: abc-analysis sourcing-strategies
+:SEE:      supplier-dependence business-map
+:ALIASES:  Kraljic portafoglio-fornitori leva collo-di-bottiglia strategico non-critico Olsen-Ellram
+:END:
+#+title: Kraljic and the supplier portfolio
+#+summary: Kraljic (1983) classifies purchase categories by strategic importance and difficulty of managing the supply situation into non-critical, leverage, bottleneck and strategic items, each with its own sourcing policy; Olsen and Ellram add relationship analysis and action plans.
+
+* Definition
+An *undifferentiated* approach (one static sourcing strategy for everything) is
+wrong: items differ in importance and may need ad hoc specifications and
+suppliers; strategy must also be dynamic. A *differentiated* approach analyses
+all purchased items to choose the ideal relationship → *segmentation of the
+supplier portfolio*.
+A *portfolio model* simplifies a complex problem by (1) classifying variables
+and objects in a matrix and (2) giving strategic recommendations per cell
+(Gelderman and Van Weele 2000). Kraljic's unit is the *purchase category*.
+
+* Model
+** The two dimensions
+| Strategic importance              | Difficulty of supply management         |
+|-----------------------------------+-----------------------------------------|
+| competence: improves buyer's      | product: novelty, complexity            |
+| competences, product quality and  |                                         |
+| functionality                     |                                         |
+| economic: volume/value, part of a | supply market: few suppliers, supplier  |
+| high value-added or profitable    | power, suppliers' technical and         |
+| product, leverage for other buys, | commercial skills                       |
+| impact on product cost            |                                         |
+| image: supplier brand critical,   | environment: risk and uncertainty, high |
+| environment/safety relations      | logistic costs, long lead times         |
+Factors are weighted to position each category.
+
+** The four categories
+| Category     | Imp./diff. | Policy                               | Sourcing   |
+|--------------+------------+--------------------------------------+------------|
+| Non-critical | low/low    | minimize management costs, simplify, | multi      |
+|              |            | standardize, fewer suppliers         |            |
+| Leverage     | high/low   | cut purchase price, develop          | dual/multi |
+|              |            | collaboration; buyer-dominated       |            |
+| Bottleneck   | low/high   | reduce or eliminate, alternatives,   | sole       |
+|              |            | make in-house, value analysis        |            |
+| Strategic    | high/high  | partnership; supplier as "natural    | single or  |
+|              |            | extension of the firm"; co-design    | dual       |
+- *Leverage*: high spend, standard quality, many suppliers → the buyer can be
+  aggressive, but mutual respect keeps the relation healthy.
+- *Non-critical*: periodic replenishment agreements ("vuoto per pieno":
+  replace empties with full), catalogues, e-procurement.
+- *Bottleneck*: not strategic but hard; standardize, simplify with
+  [[id:value-analysis][value analysis]], involve the supplier in design or preferential deals.
+- *Strategic*: close relations, supplier involved in product development.
+
+** Olsen and Ellram (1997)
+Three-step normative model: (1) analyse purchases (Kraljic); (2) analyse
+existing supplier relationships (relative attractiveness, strength of the
+relation); (3) develop action plans. The desired relationship may differ from
+the one actually available.
+
+* Worked example
+Car maker: steel coils (high spend, many mills) → leverage: tender, dual
+sourcing. Office stationery → non-critical: one catalogue, e-ordering.
+Proprietary sensor from one supplier, low value → bottleneck: buffer stock,
+redesign to a standard sensor. Battery cells → strategic: long-term
+partnership, joint development, single or dual source.
+
+* Pitfall
+The unit is the purchase category, not the supplier label. High spend does not
+mean high supply risk. Positions change with technology, demand and supply
+markets: reassess.
+
+* Recall
+Draw the axes and four quadrants with policy and sourcing type; list two
+factors for each axis; explain Olsen and Ellram's three steps.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
+\node[align=center] at (2,1) {\textbf{Non-critical}\\simplify, cut admin cost};
+\node[align=center] at (6,1) {\textbf{Leverage}\\cut price, dual sourcing};
+\node[align=center] at (2,3) {\textbf{Bottleneck}\\secure supply, sole};
+\node[align=center] at (6,3) {\textbf{Strategic}\\partnership, single/dual};
+\draw[->] (0,-0.5)--(8,-0.5) node[midway,below] {strategic importance: low to high};
+\draw[->] (-0.5,0)--(-0.5,4) node[midway,above,rotate=90] {supply difficulty};
+\end{tikzpicture}
+Both dimensions are required before choosing a purchasing policy.

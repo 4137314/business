@@ -1,0 +1,107 @@
+:PROPERTIES:
+:ID:       new-product-development
+:DOMAIN:   marketing
+:AREA:     product-development
+:KIND:     definition
+:REQUIRES: marketing-process business-processes
+:SEE:      value-analysis design-quality-tools business-map
+:ALIASES:  NPD sviluppo-nuovo-prodotto stage-gate concept package process modularità concurrent-engineering
+:END:
+#+title: New product development and Stage-Gate
+#+summary: New product development is a process from concept to final design (Stage-Gate) defining concept, package and process; launches fail for predictable reasons, and modularity, commonality and concurrent engineering reduce cost and time.
+
+* Definition
+Design covers *products and services* and *processes*, which overlap. Cycle:
+customer expectations → marketing interprets them → design turns them into
+specifications → operations make the product → customer.
+Three key aspects:
+| Aspect  | Meaning                                                      |
+|---------+--------------------------------------------------------------|
+| Concept | set of benefits the customer expects — the customer's view,  |
+|         | not the physical description                                 |
+| Package | interconnected products and services delivering the concept; |
+|         | core vs supporting components                                |
+| Process | how package components are linked and produced               |
+
+* Model
+** Why launches fail (HBR 2011)
+| Problem                                    | Lesson                               |
+|--------------------------------------------+--------------------------------------|
+| 1. cannot sustain rapid growth             | plan for fast scale-up               |
+| 2. product below expectations (Mosquito    | delay launch until really ready      |
+| Magnet)                                    |                                      |
+| 3. "product limbo": differences not clear  | test that differences convince       |
+| 4. new category needs education, not given | make use understandable at once      |
+| 5. revolutionary but no market             | ask "who buys it and at what price?" |
+Cases of design failure: *Samsung Galaxy Note 7* (battery: wrong dimensions and
+tolerances, faulty welding process) and *Boeing 737 Max*.
+
+** Stage-Gate design phases
+1. *Concept generation* — ideas from internal sources (R&D, staff in contact
+   with customers, analysis of needs) and external (customers, competitors'
+   actions, market research, marketing). Idea → concept through *functions*,
+   *form*, *benefits*, *purpose*.
+2. *Screening* — feasibility, acceptability, vulnerability, judged by
+   marketing, production and finance.
+3. *Preliminary design* — define package (products/services) and processes:
+   *bill of materials* (structure and quantities; basis for value analysis and
+   FMEA; e.g. HVAC system → heating, ventilation and cooling, emergency vents…),
+   process tools: flow charts, routing sheets, flow process charts,
+   customer-processing framework.
+4. *Evaluation and improvement* — [[id:design-quality-tools][QFD, FMEA]], [[id:value-analysis][value analysis]].
+5. *Prototyping and final design* — virtual prototyping, CAD.
+Concept is fixed in 1–2, package in 3, process in 3–5; each gate is a go/kill decision.
+
+** Preliminary-design levers
+*Standardization*, *commonality*, *modularization*, *mass customization*.
+Modularity: Fender vs Gibson guitars (bolt-on vs set neck). *VW MQB platform*:
+200+ models; shared modular platform, engine and production programmes; VW,
+Skoda and SEAT models built on the same line without long changeovers —
+lower cost, fewer parts, faster regional variants.
+
+** Product life cycle
+| Stage        | Customers      | Rivals     | Order winners       | Ops objective  |
+|--------------+----------------+------------+---------------------+----------------|
+| Introduction | innovators     | few/none   | specification       | flexibility,   |
+|              |                |            |                     | quality        |
+| Growth       | early adopters | increasing | availability        | speed, reliab. |
+| Maturity     | bulk of market | stable     | low price, reliable | cost, reliab.  |
+|              |                |            | supply              |                |
+| Decline      | laggards       | declining  | low price           | cost           |
+
+** Concurrent engineering
+Sequential stages wait for each other; *simultaneous/concurrent* engineering
+overlaps them with early information exchange → shorter time to market, fewer
+late changes.
+
+* Example
+A connected thermostat: concept "comfort with lower bills"; package = device +
+app + installation; process = assembly line + cloud service operations. A
+shared electronics module across three models is commonality; offering
+interchangeable faceplates is mass customization.
+
+* Pitfall
+The concept is benefits, not specs. Screening uses three criteria, not only
+market appeal. Overlapping stages needs communication, otherwise rework grows.
+
+* Recall
+Define concept/package/process; draw the five Stage-Gate phases; list the five
+failure reasons; explain MQB.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth},s/.style={draw=kbcyan,rounded corners,align=center,text width=1.9cm,minimum height=1cm},g/.style={draw=kbamber,circle,inner sep=1pt}]
+\node[s] (a) at (0,0) {Concept generation};
+\node[g] (g1) at (1.6,0) {G};
+\node[s] (b) at (3.2,0) {Screening};
+\node[g] (g2) at (4.8,0) {G};
+\node[s] (c) at (6.4,0) {Preliminary design};
+\node[g] (g3) at (8,0) {G};
+\node[s] (d) at (9.6,0) {Evaluation, improvement};
+\node[g] (g4) at (11.2,0) {G};
+\node[s] (e) at (12.8,0) {Prototype, final design};
+\draw[->] (a)--(g1); \draw[->] (g1)--(b); \draw[->] (b)--(g2); \draw[->] (g2)--(c); \draw[->] (c)--(g3); \draw[->] (g3)--(d); \draw[->] (d)--(g4); \draw[->] (g4)--(e);
+\draw[decorate,decoration={brace,mirror}] (-1,-0.8)--(4.2,-0.8) node[midway,below] {concept};
+\draw[decorate,decoration={brace,mirror}] (5.4,-0.8)--(7.4,-0.8) node[midway,below] {package};
+\draw[decorate,decoration={brace,mirror}] (8.6,-0.8)--(13.8,-0.8) node[midway,below] {process};
+\end{tikzpicture}
+Each gate (G) decides go, kill or rework before more money is committed.

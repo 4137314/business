@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       abc-analysis
+:DOMAIN:   procurement
+:AREA:     supplier-management
+:KIND:     method
+:REQUIRES: purchasing-process
+:SEE:      kraljic-matrix business-map
+:ALIASES:  ABC Pareto curva-ABC classificazione-fornitori
+:END:
+#+title: ABC analysis of purchasing spend
+#+summary: ABC (Pareto) classification sorts suppliers by annual spend to find the few critical ones: class A ≈ 80% of value, B ≈ 15%, C ≈ 5%.
+
+* Definition
+Goal: identify the *critical suppliers* on which the purchasing manager should
+concentrate. Steps:
+1. sort suppliers by annual purchase value, descending;
+2. compute each supplier's share of total purchases;
+3. compute the cumulative share;
+4. assign classes A, B, C.
+| Class | Share of spend | Typical share of suppliers |
+|-------+----------------+----------------------------|
+| A     | ≈ 80%          | ≈ 20–30%                   |
+| B     | ≈ 15%          | middle                     |
+| C     | ≈ 5%           | many small suppliers       |
+
+* Worked example
+| Code | Annual purchases | % of total | Cumulative % | Cum. % suppliers | Class |
+|------+------------------+------------+--------------+------------------+-------|
+| 64R  | 68,000           | 68.0%      | 68.0%        | 10%              | A     |
+| 89Q  | 12,000           | 12.0%      | 80.0%        | 20%              | A     |
+| 34T  | 5,000            | 5.0%       | 85.0%        | 30%              | B     |
+| 24Y  | 4,000            | 4.0%       | 89.0%        | 40%              | B     |
+| 98T  | 2,000            | 2.0%       | 91.0%        | 50%              | B     |
+| 56G  | 2,000            | 2.0%       | 93.0%        | 60%              | B     |
+| 55H  | 2,000            | 2.0%       | 95.0%        | 70%              | B     |
+| 21P  | 2,000            | 2.0%       | 97.0%        | 80%              | C     |
+| 94K  | 1,500            | 1.5%       | 98.5%        | 90%              | C     |
+| 71P  | 1,500            | 1.5%       | 100.0%       | 100%             | C     |
+Total 100,000. *80% of value depends on only 2 suppliers*: even small discounts
+from them cut total spend more than any action on B and C. A 3% saving on 64R
+is worth 2,040 — more than the whole annual spend with 94K.
+
+* Model
+ABC sets priorities: A → close management, negotiation, partnership; B →
+periodic review; C → simplify and automate ordering. It measures *spend* only;
+combine it with supply risk in the [[id:kraljic-matrix][Kraljic matrix]].
+
+* Pitfall
+A class-C item can still stop the line (a cheap single-source part): ABC alone
+does not measure risk. Class limits are conventions, not laws.
+
+* Recall
+Run the four steps on the table; draw the curve; say why 64R and 89Q are A.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\begin{axis}[width=8cm,height=5.5cm,xlabel={cumulative \% of suppliers},ylabel={cumulative \% of spend},xmin=0,xmax=100,ymin=0,ymax=100]
+\addplot[mark=*] coordinates {(0,0) (10,68) (20,80) (30,85) (40,89) (50,91) (60,93) (70,95) (80,97) (90,98.5) (100,100)};
+\addplot[kbguide,dashed] coordinates {(20,0) (20,80) (0,80)};
+\addplot[kbguide,dashed] coordinates {(70,0) (70,95) (0,95)};
+\node at (axis cs:10,40) {A}; \node at (axis cs:45,40) {B}; \node at (axis cs:85,40) {C};
+\end{axis}
+\end{tikzpicture}
+Two suppliers out of ten account for 80% of the spend.

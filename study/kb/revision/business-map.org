@@ -1,0 +1,175 @@
+:PROPERTIES:
+:ID:       business-map
+:DOMAIN:   revision
+:AREA:     exam-practice
+:KIND:     model
+:REQUIRES:
+:SEE:      organization-and-performance
+:ALIASES:
+:END:
+#+title: Business Organization and Management: study map
+#+summary: A connected study path from organizational choices to customers, suppliers, operations, financial performance and project delivery.
+
+* Study method
+Read foundations first, then follow prerequisites. For each concept, explain the
+definition aloud, work through the example, identify a pitfall and answer the
+recall question before looking back. Use lateral links to connect decisions
+across functions. Revisit difficult concepts after a day and again after a week.
+
+Use the revision exercises after the underlying concepts. They are original
+practice material, not a prediction of the assessment or its marking scheme.
+
+* Organization
+- [[id:organization-and-performance][Organizations, resources and performance]]
+- [[id:organizational-structures][Simple, functional, divisional and matrix structures]]
+- [[id:business-processes][Processes and coordination]]
+- [[id:classical-management][Taylor, Fayol and Weber]]
+- [[id:motivation-and-leadership][Human relations, motivation and leadership]]
+- [[id:contingency-theory][Contingency and organizational fit]]
+- [[id:transaction-costs][Transaction costs and make-or-buy]]
+- [[id:ownership-and-governance][Ownership, liability and governance]]
+
+* Strategy
+- [[id:business-strategy][Strategy, objectives and competitive advantage]]
+- [[id:five-forces][Porter: the five competitive forces]]
+- [[id:generic-strategies][Cost leadership, differentiation and focus]]
+- [[id:value-chain][The value chain and strategic groups]]
+- [[id:resource-based-view][Resources, capabilities and competitive advantage]]
+
+* Marketing
+- [[id:marketing-process][Customer value and the marketing process]]
+- [[id:portfolio-and-growth][BCG, Ansoff and the business portfolio]]
+- [[id:market-segmentation][Market segmentation]]
+- [[id:targeting-and-swot][Targeting, SWOT and GE-McKinsey]]
+- [[id:positioning][Positioning, perception maps and service gaps]]
+- [[id:marketing-mix][The marketing mix and product decisions]]
+- [[id:pricing][Pricing and contribution]]
+- [[id:new-product-development][New product development and Stage-Gate]]
+- [[id:value-analysis][Functional analysis, FAST and value]]
+- [[id:design-quality-tools][QFD, FMEA and design improvement]]
+
+* Procurement
+- [[id:purchasing-process][Industrial purchasing and the buying process]]
+- [[id:buygrid][Buying situations and the Buygrid model]]
+- [[id:purchasing-leverage][The profit impact of purchasing savings]]
+- [[id:vendor-rating][Vendor grids and weighted supplier ratings]]
+- [[id:total-cost-of-ownership][Total cost of ownership]]
+- [[id:abc-analysis][ABC analysis of purchasing spend]]
+- [[id:sourcing-strategies][Single, sole, dual and multiple sourcing]]
+- [[id:supplier-dependence][Fujimoto and buyer-supplier dependence]]
+- [[id:kraljic-matrix][Kraljic and the supplier portfolio]]
+
+* Operations
+- [[id:operations-objectives][Operations, the four Vs and performance objectives]]
+- [[id:volume-variety-processes][The volume-variety matrix]]
+- [[id:process-layouts][Fixed-position, functional, cellular and line layouts]]
+- [[id:order-fulfilment][The order decoupling point, BOM, MRP and ERP]]
+- [[id:quality-management][Quality, service gaps and quality costs]]
+- [[id:statistical-process-control][Process variation and control charts]]
+- [[id:improvement-approaches][TQM, continuous improvement and BPR]]
+- [[id:lean-management][Lean, waste and value-stream mapping]]
+- [[id:five-s-and-leveling][5S, production leveling and improvement routines]]
+- [[id:pull-and-kanban][Push, pull, JIT and Kanban]]
+- [[id:six-sigma][Six Sigma and DMAIC]]
+- [[id:digital-decision-making][Bounded rationality and digital transformation]]
+- [[id:supply-chain-management][Supply-chain integration and global performance]]
+- [[id:bullwhip-effect][The bullwhip effect]]
+- [[id:fisher-supply-chain][Fisher: efficient and responsive supply chains]]
+
+* Accounting
+- [[id:financial-statements][Financial statements and accrual accounting]]
+- [[id:balance-sheet][The balance sheet and the accounting equation]]
+- [[id:depreciation][Depreciation and carrying amount]]
+- [[id:accruals-and-deferrals][Accruals and deferrals across periods]]
+- [[id:income-statement][Income, inventory and operating subtotals]]
+- [[id:liquidity-and-working-capital][Liquidity, working capital and treasury margin]]
+- [[id:financial-structure-ratios][Funding structure and fixed-asset coverage]]
+- [[id:profitability-ratios][ROS, ROI, ROA, ROE and financing cost]]
+
+* Projects
+- [[id:project-foundations][Projects, planning and the WBS]]
+- [[id:critical-path][Critical path, float and crashing]]
+- [[id:project-governance][RACI, the project manager and the PMO]]
+- [[id:earned-value][Earned value and project variances]]
+
+* Revision
+- [[id:concept-comparisons][Distinctions to explain without notes]]
+- [[id:practice-questions][Multiple-choice practice with explanations]]
+- [[id:numerical-practice][Numerical practice and worked answers]]
+
+* Matrix atlas
+Every 2×2 or grid of the course, with its axes — draw each from memory.
+| Matrix         | Horizontal axis       | Vertical axis         | Cells            |
+|----------------+-----------------------+-----------------------+------------------|
+| Theories map   | determ./possib.       | subject/systems       | 4 schools        |
+| Porter generic | cost/differentiation  | broad/narrow scope    | 4 strategies     |
+| BCG            | relative market share | market growth         | 4 SBU types      |
+| Ansoff         | existing/new products | existing/new markets  | 4 growth paths   |
+| GE-McKinsey    | competitive pos.      | attractiveness        | 9 cells, 3 zones |
+| SWOT           | positive/negative     | internal/external     | S, W, O, T       |
+| Expectations   | poor/great experience | low/high expectations | 4 states         |
+| Perception map | price                 | quality               | positions, gaps  |
+| Slack I-P      | importance            | performance vs rivals | 4 zones          |
+| Kraljic        | strategic importance  | supply difficulty     | 4 categories     |
+| Power matrix   | supplier power        | buyer power           | 4 dependences    |
+| Buygrid        | buy class             | eight buy phases      | emphasis         |
+| Volume–variety | volume                | variety               | 5 + 3 processes  |
+| Fisher         | efficient/responsive  | functional/innovative | match/mismatch   |
+| RACI           | people                | activities            | R, A, C, I       |
+
+* Formula sheet
+| Topic              | Formula                                                  |
+|--------------------+----------------------------------------------------------|
+| Effectiveness      | actual output / expected output                          |
+| Efficiency         | output (revenue) / input (cost)                          |
+| Profitability      | profit / investment                                      |
+| Vendor grid        | \( F_k = \sum_i w_i c_{i,k} \)                           |
+| Purchasing lever   | 1 / ROS; ROA = ROS × asset turnover                      |
+| Value              | satisfaction of needs / use of resources                 |
+| Break-even         | \( Q^* = F/(p-v) \)                                      |
+| Process efficiency | VA time / total lead time                                |
+| Little's law       | WIP = throughput rate × throughput time                  |
+| Capability         | \( C_p = (UTL-LTL)/6\sigma \)                            |
+| FMEA               | RPN = severity × occurrence × detection                  |
+| Depreciation       | \( Q = (V_0 - V_r)/n \), \( V_k = V_0 - kQ \)            |
+| Liquidity          | MT = Li + Ld − Pcor; CCN = AC − Pcor; IL = (AC − R)/Pcor |
+| Structure          | ISP = PN/AI; IS = (Pcor + Pcon)/PN                       |
+| Profitability      | ROI = RO/IC; ROS = RO/sales; ROA = RO/assets; ROD = OF/L |
+| CPM                | Float = LST − EST                                        |
+| Earned value       | CV = BCWP − ACWP; SV = BCWP − BCWS; CPI, SPI ratios      |
+
+* Company examples index
+| Company / case                          | Topic                                  |
+|-----------------------------------------+----------------------------------------|
+| Apple, GE, Nike                         | functional, divisional, matrix         |
+| Hawthorne (Western Elec.)               | human relations                        |
+| Coca-Cola                               | five forces, value chain, Ansoff,      |
+|                                         | undifferentiated marketing             |
+| IKEA, Ryanair, Southwest                | cost leadership                        |
+| Apple, Benetton, Ferrari                | differentiation, differentiation focus |
+| US airlines                             | strategic groups (cost/ASM × AQR)      |
+| Apple products                          | BCG                                    |
+| Telephone company, Champion             | segmentation                           |
+| AirPods 2                               | SWOT                                   |
+| Chocolate bars, Airbus A300             | perception maps, positioning gap       |
+| Coffee, Starbucks, hotels               | product ladder, quality attributes     |
+| Samsung Note 7, Boeing 737 Max          | NPD failures                           |
+| VW MQB                                  | platform commonality                   |
+| Lighter, USB pen, brake                 | FAST, QFD, FMEA                        |
+| Toyota Corolla, Fiat                    | value analysis results                 |
+| Aluminium oxide                         | TCO                                    |
+| Enel, BLM                               | vendor rating, supplier KPI sharing    |
+| Dell, Coca-Cola, Scavolini, Fincantieri | MTS/ATO/MTO/ETO                        |
+| Toyota, Ford V8 block, Black & Decker   | Lean, VSM, 5S                          |
+| Motorola, HP toner                      | Six Sigma, Ishikawa                    |
+| Adige BLM, Novotic                      | digital decision support               |
+| Boeing 787, Dell, Barilla, Walmart      | supply chains, cross docking           |
+| Inventata sas, ALFA                     | balance sheet, ratio analysis          |
+| KM system for an insurer                | WBS, Gantt, CPM, RACI                  |
+
+* Exam strategy
+For an open question: (1) define the concept precisely with the author and
+year; (2) draw the model or matrix with labelled axes; (3) apply it to the
+course company example; (4) add a numerical check if the topic has a formula;
+(5) close with a limitation or a link to another model (e.g. ABC → Kraljic,
+five forces → value chain → RBV, quality → Six Sigma → Lean).

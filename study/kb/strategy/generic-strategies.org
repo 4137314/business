@@ -1,0 +1,102 @@
+:PROPERTIES:
+:ID:       generic-strategies
+:DOMAIN:   strategy
+:AREA:     competitive-strategy
+:KIND:     definition
+:REQUIRES: five-forces
+:SEE:      value-chain market-segmentation business-map
+:ALIASES:  strategie-di-base leadership-di-costo differenziazione focalizzazione stuck-in-the-middle
+:END:
+#+title: Cost leadership, differentiation and focus
+#+summary: Two sources of advantage (low cost, differentiation) times two scopes (whole industry, one segment) give Porter's generic strategies; being stuck in the middle is a strategic error.
+
+* Model
+Competitive advantage arises from the *value* a firm creates for its customers.
+Value is what buyers are willing to pay; superior value comes from offering
+*the same benefits at lower prices* (cost leadership) or *unique benefits that
+more than offset a higher price* (differentiation).
+| Scope \ advantage      | Low cost              | Differentiation       |
+|------------------------+-----------------------+-----------------------|
+| Broad (whole industry) | Cost leadership       | Differentiation       |
+|                        | IKEA, Ryanair         | Apple, Benetton       |
+| Narrow (one segment)   | Cost focus            | Differentiation focus |
+|                        | discount niche brands | Ferrari (hand-made)   |
+Cost leadership rests on a more efficient structure; differentiation on a
+generic feature valued by customers (e.g. brand); cost focus on an exclusive
+cost source; differentiation focus on an inimitable element (e.g. hand-made).
+
+** Cost leadership
+Goal: become the lowest-cost producer in the industry, serving many segments.
+Sources: low wages, *economies of scale*, money-saving technologies and
+processes, privileged access to raw materials, automation, eliminating services
+the customer sees as marginal (free drinks on flights). Three instruments:
+process innovation (less scrap, materials, labour, stock, lead and set-up
+time), removal of useless costs along the value chain, outsourcing of non-core
+activities.
+Cases: *IKEA* — huge retail volumes, flat-pack furniture designed for
+self-assembly (cheaper transport), customers pick up, pay, transport and
+assemble → prices about 20% below competitors. *Southwest Airlines* — no meals,
+short turnaround, smaller crew, no seat assignment. *Wal-Mart* — purchasing
+power, cheap locations, inventory IT. *Toys "R" Us* — "category killer".
+Caution: a cost leader must keep *parity or proximity in differentiation*;
+Texas Instruments left digital watches despite cost leadership. Several firms
+all chasing lowest cost → savage competition (airlines).
+
+** Differentiation
+Be unique on attributes important to customers, rewarded with a premium price.
+Instruments: better perceived quality (Caterpillar: quality and service),
+innovative product, product integrated with a service (home delivery),
+innovative marketing (Intel's "Crush" campaign against Motorola and Zilog).
+Cases: Smart, Ferrari, fashion brands, five-star hotels. The differentiator must
+keep *cost parity or proximity*. Several differentiation strategies can coexist.
+
+** Focus
+Choose a narrow segment or niche (typical of SMEs) that broad competitors serve
+badly: cost focus exploits different cost behaviour in the segment;
+differentiation focus exploits special needs (adventure tourism).
+
+** Sustainability and risks
+| Strategy        | Risks                                                       |
+|-----------------+-------------------------------------------------------------|
+| Cost leadership | imitation without R&D costs; technology changes; erosion of |
+|                 | the sources of cost leadership                              |
+| Differentiation | competitors imitate the differentiating element; customers  |
+|                 | stop valuing it                                             |
+| Focus           | segment becomes unattractive: demand disappears or broad    |
+|                 | competitors occupy it                                       |
+
+** Stuck in the middle
+Not choosing a strategy means remaining "stuck in the middle", unable to gain
+any specific advantage. A firm *cannot pursue more than one generic strategy*
+unless: competition is also stuck in the middle; costs are strongly driven by
+market share and interrelations among businesses; or the firm achieves a
+non-imitable innovation. "Everything for everyone" is the recipe for strategic
+mediocrity.
+
+* Worked example
+US airline industry, strategic groups on cost per ASM × quality (AQR):
+differentiation group American, United, Delta (high quality); cost leadership
+America West (low cost, low quality); focus Southwest; stuck in the middle TWA,
+Northwest, USAir, Continental. See [[id:value-chain][strategic groups]].
+
+* Pitfall
+Low price is not the strategy; low *cost* is. Focus is defined by the narrow
+scope, then split in cost or differentiation.
+
+* Recall
+Draw the 2×2 with the six company examples; list three sources of cost
+advantage and four differentiation instruments; state the three exceptions to
+"one strategy only".
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
+\node at (2,4.35) {Low cost}; \node at (6,4.35) {Differentiation};
+\node[rotate=90] at (-0.4,3) {Broad}; \node[rotate=90] at (-0.4,1) {Narrow};
+\node[align=center] at (2,3) {\textbf{Cost leadership}\\IKEA, Ryanair};
+\node[align=center] at (6,3) {\textbf{Differentiation}\\Apple, Benetton};
+\node[align=center] at (2,1) {\textbf{Cost focus}\\discount niche};
+\node[align=center] at (6,1) {\textbf{Differentiation focus}\\Ferrari};
+\fill[kbmagenta] (4,2) circle (3pt) node[above right] {stuck in the middle};
+\end{tikzpicture}
+Choose one cell; the centre of the matrix is the strategic error.

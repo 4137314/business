@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       ownership-and-governance
+:DOMAIN:   organization
+:AREA:     foundations
+:KIND:     definition
+:REQUIRES: organization-and-performance
+:SEE:      financial-statements business-map
+:ALIASES:  governance società-di-persone società-di-capitali CdA collegio-sindacale
+:END:
+#+title: Ownership, liability and governance
+#+summary: Partnerships give partners unlimited liability, corporations limit it to the capital invested; governance assigns roles to the shareholders' meeting, board, statutory auditors, CEO and general manager.
+
+* Definition
+Three faces of the same coin: *azienda* (resources), *impresa* (entrepreneurial
+activity), *società* (legal form of the two).
+*Governance* is the set of rules of the firm as an institution (legal subject)
+by which it is managed and controlled, completing the obligations of laws and
+binding norms.
+
+* Comparison
+| Form                      | Examples       | Liability for company debts          |
+|---------------------------+----------------+--------------------------------------|
+| Partnership (di persone)  | S.n.c., S.a.s. | unlimited: reaches personal property |
+| Corporation (di capitali) | S.p.A., S.r.l. | limited to capital invested          |
+Corporations pay for limited liability with greater duties (formalities,
+publication of accounts, control bodies). In an S.a.s. general partners
+(/accomandatari/) have unlimited liability and manage; limited partners
+(/accomandanti/) risk only their contribution.
+
+* Model
+| Body                          | Role                                         |
+|-------------------------------+----------------------------------------------|
+| Shareholders' meeting         | ordinary and extraordinary; appoints board   |
+| Board of directors (CdA)      | strategic direction, oversight of management |
+| Board of statutory auditors   | control and audit, protecting shareholders   |
+| CEO (amministratore delegato) | executes the investment of shareholders      |
+| General manager               | coordinates the functional areas             |
+
+* Example
+Shareholders of an S.p.A. meet and appoint the board; the board appoints the
+CEO; the CEO with the general manager runs production, sales and finance; the
+statutory auditors check the accounts. If the firm fails, shareholders lose
+their capital but not their houses — unlike S.n.c. partners.
+
+* Pitfall
+Unlimited liability means exposure of personal assets, not unlimited power.
+Ownership, governance and day-to-day management may belong to different people.
+
+* Recall
+Classify S.n.c., S.a.s., S.r.l., S.p.A. by liability; list the five governance
+bodies with one role each.

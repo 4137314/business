@@ -1,0 +1,117 @@
+:PROPERTIES:
+:ID:       marketing-process
+:DOMAIN:   marketing
+:AREA:     market-analysis
+:KIND:     definition
+:REQUIRES: business-strategy
+:SEE:      market-segmentation marketing-mix business-map
+:ALIASES:  marketing bisogni desideri domanda miopia-di-marketing CRM customer-equity Lambin
+:END:
+#+title: Customer value and the marketing process
+#+summary: Marketing creates value for customers and builds profitable relationships to capture value in return; it starts from needs, wants and demand and splits into strategic (analysis) and operational (action) marketing.
+
+* Definition
+Marketing is the process by which firms *create value for customers* and build
+strong relationships with them *in order to capture value in return*.
+| Concept | Meaning                                | Pizza example    |
+|---------+----------------------------------------+------------------|
+| Need    | state of felt deprivation              | hunger           |
+| Want    | need shaped by culture and personality | wanting a pizza  |
+| Demand  | want backed by purchasing power        | buying the pizza |
+Needs are intrinsic to human nature and of three types — *functional* (an
+object/service: transport), *psychological* (an attitude/value: moving safely),
+*social* (a sign/symbol: being noticed while moving). Perception of a need is
+subjective; one product can meet several needs, one need can be met by several
+products.
+
+*Market offering*: combination of products, services, information or
+experiences offered to satisfy a need. *Marketing myopia*: paying more
+attention to the products than to the benefits and experiences they produce.
+*Exchange*: obtaining a desired good from someone by offering something in
+return — keep and grow existing customers, not only attract new ones. *Market*:
+set of actual and potential buyers.
+
+* Model
+** Value and satisfaction: setting expectations
+Marketers must set the *right level of expectations*: neither too high
+(disappointment) nor too low (no attraction). "What you order vs what you receive".
+| Expectations \ experience | Poor experience | Great experience |
+|---------------------------+-----------------+------------------|
+| High expectations         | disappointed    | devoted          |
+| Low expectations          | disaffected     | delighted        |
+Perceived quality is poor when expectations > perceptions, good when
+expectations < perceptions ([[id:quality-management][gap model]]).
+
+** Strategic planning hierarchy
+Mission → objectives → business portfolio → functional/product/market strategy
+→ marketing strategy. The *mission* should be market-oriented (products and
+technologies become obsolete, customer needs remain). Objectives are cascaded
+to every manager; e.g. strategic objective "invest in advertising, strategic
+partnerships", marketing strategy "improve the perceived quality of McDonald's
+Italy". Portfolio: see [[id:portfolio-and-growth][BCG and Ansoff]].
+
+** Customer-driven marketing strategy
+Two key questions: *who are our customers?* (segmentation and targeting) and
+*how can we serve them best?* (differentiation and positioning, the *value
+proposition* — the set of benefits and values promised; Value Proposition Canvas).
+
+** Five marketing orientations
+| Concept            | Focus                                | Example      |
+|--------------------+--------------------------------------+--------------|
+| Production         | availability and low cost            | H&M          |
+| Product            | quality, performance, features       | a laptop     |
+| Selling            | large-scale selling and promotion    | Allianz      |
+| Marketing          | customer needs, integrated marketing | Apple iPhone |
+| Societal marketing | consumer wants + firm + long-term    | sustainable  |
+|                    | interests of consumers and society   | brands       |
+Selling concept: factory → existing products → selling and promoting → profit
+through *sales volume*. Marketing concept: market → customer needs → integrated
+marketing → profit through *customer satisfaction*.
+
+** Capturing value
+- *Marketing mix*: tools implementing the strategy (4P, [[id:marketing-mix][marketing mix]]);
+  integrated marketing programme combines them.
+- *CRM*: creating, maintaining and growing profitable relationships by offering
+  superior value and satisfaction.
+- *Customer lifetime value*: value of the whole stream of purchases of a
+  customer loyal for life. *Share of customer*: share of the customer's
+  purchases in the category won by the firm. *Customer equity*: total lifetime
+  value of all the firm's customers.
+- Customer journey: awareness → consideration → conversion → loyalty → advocacy.
+
+** Strategic vs operational marketing (Lambin)
+| Strategic marketing                | Operational marketing                   |
+|------------------------------------+-----------------------------------------|
+| analysis-oriented                  | action-oriented                         |
+| needs analysis, segmentation,      | product, distribution, price,           |
+| attractiveness and competitive     | promotion → marketing programme         |
+| analysis → positioning strategy    |                                         |
+| which market, segment, positioning | reach a market share with the 4P levers |
+| medium to long term                | short to medium term                    |
+
+* Worked example
+Customer spends EUR 40 a week in supermarkets, 50% with our chain (share of
+customer), for 20 years: lifetime revenue \( 40 \times 52 \times 20 \times 0.5
+= \text{EUR } 20{,}800 \). Raising the share to 60% adds EUR 4,160 without
+acquiring a single new customer.
+
+* Pitfall
+A need is not created by marketing; wants and demand are shaped. Selling ≠
+marketing: selling starts from the factory, marketing from the market.
+
+* Recall
+Define marketing; explain need/want/demand with the pizza; draw the
+expectations × experience matrix; list five orientations with examples;
+contrast strategic and operational marketing.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,text width=2.3cm,minimum height=1.1cm}]
+\node[b] (a) at (0,0) {Understand market and needs};
+\node[b] (b) at (3,0) {Customer-driven strategy};
+\node[b] (c) at (6,0) {Integrated marketing programme};
+\node[b] (d) at (9,0) {Profitable relationships};
+\node[b,draw=kbamber] (e) at (12,0) {Capture value: profit, equity};
+\draw[->] (a)--(b); \draw[->] (b)--(c); \draw[->] (c)--(d); \draw[->] (d)--(e);
+\draw[decorate,decoration={brace,mirror}] (-1.2,-0.8)--(10.2,-0.8) node[midway,below] {create value for customers};
+\end{tikzpicture}
+Four steps create value for customers; the fifth captures value from them.

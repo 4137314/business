@@ -1,0 +1,112 @@
+:PROPERTIES:
+:ID:       practice-questions
+:DOMAIN:   revision
+:AREA:     exam-practice
+:KIND:     example
+:REQUIRES: concept-comparisons
+:SEE:      numerical-practice business-map
+:ALIASES:
+:END:
+#+title: Multiple-choice practice with explanations
+#+summary: Thirty practice questions across the whole course test distinctions and interpretation; the explanations identify why the correct choice follows.
+
+* Questions
+1. A functional structure groups people primarily by:
+   A: product market. B: expertise. C: customer order.
+2. Which is a substitute for a train service?
+   A: its ticket supplier. B: another train operator. C: an intercity coach.
+3. A narrow target with specialized benefits is:
+   A: differentiation focus. B: broad cost leadership. C: market penetration.
+4. The only technically viable supplier describes:
+   A: a straight rebuy. B: sole sourcing. C: voluntary single sourcing.
+5. High importance and low supply difficulty indicate a:
+   A: bottleneck item. B: non-critical item. C: leverage item.
+6. Which belongs in TCO?
+   A: only invoice price. B: only depreciation. C: relevant lifecycle costs.
+7. A process within statistical control limits:
+   A: must meet specifications. B: can still be incapable. C: has no variation.
+8. Pull production is authorized by:
+   A: downstream consumption. B: maximum machine utilization. C: annual revenue.
+9. Receiving a bank loan initially increases:
+   A: revenue and profit. B: cash and liabilities. C: cash and equity.
+10. Annual rent paid in advance with three months after year-end creates:
+    A: accrued expense for three months. B: revenue. C: prepaid expense.
+11. Shortening an activity with unused float necessarily:
+    A: shortens the project. B: raises EV. C: does neither of these automatically.
+12. If EV=40 and AC=45, cost variance is:
+    A: -5. B: +5. C: -85.
+13. In the Hawthorne studies productivity rose mainly because of:
+    A: better lighting. B: higher pay. C: workers feeling observed and valued.
+14. Chandler's contingency claim is:
+    A: structure follows strategy. B: size follows technology. C: one best way.
+15. Woodward found mechanistic structures fit best:
+    A: unit production. B: mass production. C: continuous process.
+16. In BCG a product with high relative share in a slow market is a:
+    A: star. B: cash cow. C: question mark.
+17. Coca-Cola Zero for a new customer group with the existing cola recipe is,
+    in the course's Ansoff example:
+    A: market development. B: diversification. C: market penetration.
+18. Classic Coca-Cola for everyone with mass channels is:
+    A: concentrated marketing. B: undifferentiated marketing. C: one-to-one.
+19. A segment that is homogeneous but impossible to reach fails the requirement of:
+    A: measurability. B: accessibility. C: durability.
+20. Selling a new product at a high launch price and lowering it later is:
+    A: penetration. B: skimming. C: dynamic pricing.
+21. In a FAST diagram reading left to right answers:
+    A: why? B: how? C: how much?
+22. In the Buygrid, a straight rebuy puts emphasis on:
+    A: need definition and specifications. B: supplier selection.
+    C: problem recognition and order routine.
+23. Single sourcing from an independent supplier with many customers leads to:
+    A: buyer dominance. B: supplier dominance. C: interdependence.
+24. A firm that assembles PCs only after receiving the order (Dell) is:
+    A: MTS. B: ATO. C: ETO.
+25. Which waste is "operators waiting for parts"?
+    A: motion. B: waiting. C: transport.
+26. 3.4 defects per million opportunities corresponds to:
+    A: 3 sigma. B: 4.5 sigma without shift. C: 6 sigma with a 1.5σ shift.
+27. A functional product (stable demand, low margin) should use:
+    A: an efficient (lean) chain. B: a responsive (agile) chain. C: either.
+28. MT < 0 but CCN > 0 means:
+    A: inventory is needed to cover short-term debts. B: the firm is insolvent.
+    C: equity is negative.
+29. IS = (Pcor + Pcon)/PN = 2.84 indicates:
+    A: strong autonomy. B: critical dependence on external funds. C: high ROI.
+30. In RACI the number of "A" per activity must be:
+    A: at least two. B: exactly one. C: any.
+
+* Answer key
+1. B: functional grouping pools specialist work (Apple).
+2. C: it meets the transport need through another solution; B is direct rivalry.
+3. A: scope is narrow and the advantage is differentiation (Ferrari).
+4. B: lack of alternatives is a constraint, not a choice.
+5. C: leverage = importance with accessible supply alternatives.
+6. C: acquisition, operation and end-of-life costs can change the ranking.
+7. B: statistical stability and customer acceptability are separate questions.
+8. A: a replenishment signal follows use.
+9. B: borrowing gives financing and an obligation, not income.
+10. C: the future portion of an already paid expense is a risconto attivo.
+11. C: non-critical activities do not move the end date.
+12. A: CV = EV − AC.
+13. C: the attention effect, psychological rather than material.
+14. A: strategy determines the configuration.
+15. B: Taylorist, mechanistic organization is efficient in mass production.
+16. B: high share, low growth: generates cash with little investment.
+17. A: existing product, new market segment.
+18. B: one plan for the whole market (fits cost leadership).
+19. B: cost and channels to reach and serve the segment matter.
+20. B: iPhone USD 599 → 399.
+21. B: left to right "how?", right to left "why?".
+22. C: phases 1 and 7 (reorder-point routines).
+23. B: Fujimoto's single sourcing, independent supplier.
+24. B: decoupling point before assembly.
+25. B: one of the "people" wastes.
+26. C: the convention includes the long-term shift.
+27. A: Fisher's match.
+28. A: without inventory, liquid assets do not cover current liabilities.
+29. B: the course flags IS > 2 as critical (ALFA 2012).
+30. B: one accountable person per activity.
+
+* Review
+Explain why every rejected alternative is wrong. Then change one assumption to
+make a rejected answer appropriate, where possible.

@@ -1,0 +1,74 @@
+:PROPERTIES:
+:ID:       motivation-and-leadership
+:DOMAIN:   organization
+:AREA:     theories
+:KIND:     definition
+:REQUIRES: classical-management
+:SEE:      contingency-theory business-map
+:ALIASES:  Mayo Hawthorne Maslow Herzberg Likert relazioni-umane stili-di-direzione
+:END:
+#+title: Human relations, motivation and leadership
+#+summary: The human-relations school (Mayo, Hawthorne) and motivational theories (Maslow, Herzberg) look at the individual's needs; Likert classifies four leadership styles from authoritarian to participative.
+
+* Model
+** Human-relations school — Elton Mayo (1927)
+Motivational theories still focus on the *subject* but are *possibilistic*: not
+the neoclassical rational entrepreneur, but individuals with motivations,
+perceptions, aspirations and expectations. Man is a multidimensional entity
+with physical, psychological and social needs; the aim is to induce behaviour
+coherent with the organization.
+*Hawthorne experiment* (Western Electric, Hawthorne Works, Chicago): typists and
+workers produced more not because of changes in working conditions — lighting,
+breaks, length of the working day, pay — but because they realized they were
+the object of attention. Productivity changed for psychological, not
+sociological (material-condition) reasons.
+
+** Maslow's pyramid
+| Level (bottom → top)        | Example at work                      |
+|-----------------------------+--------------------------------------|
+| 1. Physiological            | adequate pay, rest, safe temperature |
+| 2. Safety                   | stable contract, health and safety   |
+| 3. Belonging, socialization | team, colleagues, informal groups    |
+| 4. Esteem                   | recognition, status, career          |
+| 5. Self-actualization       | challenging work, creativity, growth |
+A satisfied lower need stops motivating; higher needs become active.
+
+** Herzberg's two factors
+| Hygiene (prevent dissatisfaction)       | Motivators (create satisfaction)        |
+|-----------------------------------------+-----------------------------------------|
+| pay, working conditions, company policy | achievement, recognition                |
+| supervision, relations, job security    | responsibility, growth, the work itself |
+Removing dissatisfaction (hygiene) does not by itself create motivation.
+
+** Likert's leadership styles
+| Style         | Who decides                 | How subordinates are involved  |
+|---------------+-----------------------------+--------------------------------|
+| Authoritarian | the manager alone           | choices imposed, coercion      |
+| Paternalistic | manager keeps key decisions | delegates execution only       |
+| Consultative  | manager on major decisions  | subordinates propose ideas     |
+| Participative | shared, broad delegation    | democratic; manager supervises |
+Steve Jobs's style is the classic autocratic example.
+
+* Example
+An engineer with good pay and a modern lab (hygiene satisfied, Maslow 1–2) but
+no responsibility or recognition is "not dissatisfied" yet not motivated. A pay
+rise changes nothing; giving ownership of a module (responsibility,
+self-actualization) does.
+
+* Pitfall
+Hawthorne: the cause is *attention*, not lighting. Herzberg is not Maslow: the
+two lists are not the same ladder. Consultative ≠ participative: in the first
+the manager still decides.
+
+* Recall
+Tell the Hawthorne story in three sentences; draw Maslow's pyramid; give two
+hygiene factors and two motivators; rank Likert's four styles by delegation.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\draw[kbcyan] (0,0)--(8,0)--(4,5)--cycle;
+\foreach \y/\t in {0.5/Physiological,1.5/Safety,2.5/Belonging,3.4/Esteem,4.25/Self-act.}{\node at (4,\y) {\t};}
+\foreach \y in {1,2,3,3.9}{\draw[kbcyan] ({0.8*\y},\y)--({8-0.8*\y},\y);}
+\draw[->,kbamber,thick] (8.6,0.3)--(8.6,4.6) node[midway,right,align=left] {higher needs\\activate when\\lower are met};
+\end{tikzpicture}
+Maslow: lower needs first; Herzberg: hygiene at the bottom only prevents dissatisfaction.

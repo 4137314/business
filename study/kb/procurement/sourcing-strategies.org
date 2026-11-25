@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       sourcing-strategies
+:DOMAIN:   procurement
+:AREA:     supplier-management
+:KIND:     definition
+:REQUIRES: purchasing-process transaction-costs
+:SEE:      supplier-dependence kraljic-matrix business-map
+:ALIASES:  single-sourcing sole-sourcing dual-sourcing multi-sourcing parallel-sourcing
+:END:
+#+title: Single, sole, dual and multiple sourcing
+#+summary: Single sourcing uses one replaceable supplier, sole sourcing one monopolist, dual sourcing two parallel sources and multi-sourcing many; the trend is fewer suppliers and closer relations, supported by TQM and JIT.
+
+* Definition
+| Strategy        | Definition                                                 |
+|-----------------+------------------------------------------------------------|
+| Single sourcing | one supplier for an item; *not a monopolist*, replaceable; |
+|                 | must meet the performance requirements                     |
+| Sole sourcing   | one supplier that *holds a monopoly*; supplier dominant,   |
+|                 | buyer dependent                                            |
+| Dual/parallel   | two sources to limit reliability risk; more control;       |
+|                 | creates competition, covers regions, solves capacity       |
+| Multi sourcing  | several suppliers at once for the same item; the most      |
+|                 | frequent approach                                          |
+
+* Model
+| Single sourcing: pros         | Single sourcing: cons                          |
+|-------------------------------+------------------------------------------------|
+| stronger, lasting relations   | vulnerable to the supplier's delivery problems |
+| more involvement from         | dependence on supplier for time, cost and      |
+| mutual dependence             | quality                                        |
+| better communication          | greater supplier bargaining power              |
+| supplier scale economies,     |                                                |
+| lower price                   |                                                |
+| simpler quality control       |                                                |
+| Multi sourcing: pros          | Multi sourcing: cons                           |
+|-------------------------------+------------------------------------------------|
+| price competition among       | hard to stimulate supplier commitment          |
+| suppliers                     |                                                |
+| possibility to switch source  | more variability in purchased items            |
+| wider network of knowledge    | hard scheduling, complex logistics             |
+| flexibility to demand changes | more communication, higher transaction costs   |
+| stocks split among suppliers  | less involvement, fewer scale economies        |
+Trend: *reduce the number of suppliers* to build stronger, cooperative relations,
+supported by Japanese models — *TQM* (purchase quality drives product quality:
+close collaboration, selection and training of suppliers) and *JIT* (levelled
+production, synchronization, elimination of stocks; see [[id:pull-and-kanban][JIT]]).
+The global *microchip shortage* (2021–2022) showed the risk of thin, concentrated
+supply bases: dual sourcing and buffers regained value.
+
+* Example
+Tyres for a car model: dual sourcing (two brands qualified) keeps price
+pressure and continuity. An ECU from a company holding the only certified
+design: sole sourcing. Office supplies: multi sourcing or a single
+catalogue supplier. See [[id:transaction-costs][transaction costs]].
+
+* Pitfall
+Single ≠ sole: single is a *choice* among alternatives; sole is a *constraint*
+(monopoly). Fewer suppliers raise dependence: pair it with risk management.
+
+* Recall
+Define the four strategies; list three pros and three cons of single and multi
+sourcing; explain the role of TQM and JIT in supplier reduction.

@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       supplier-dependence
+:DOMAIN:   procurement
+:AREA:     supplier-management
+:KIND:     definition
+:REQUIRES: sourcing-strategies
+:SEE:      kraljic-matrix business-map
+:ALIASES:  Fujimoto power-matrix dipendenza Scott-Westbrook buyer-dominance supplier-dominance
+:END:
+#+title: Fujimoto and buyer-supplier dependence
+#+summary: Fujimoto crosses single/multi sourcing with dedicated/independent suppliers; Scott and Westbrook's power matrix places each case in interdependence, supplier dominance, buyer dominance or independence.
+
+* Definition
+Relations should be analysed from the supplier's side too. *Power matrix*
+(Scott and Westbrook 1991):
+- *buyer's power over the supplier* = share of supplier x's revenue coming from
+  customer y;
+- *supplier's power over the buyer* = share of customer y's purchases (of that
+  item) bought from supplier x.
+
+* Model
+| Buyer power \ supplier power  | Low             | High               |
+|-------------------------------+-----------------+--------------------|
+| High (y big share of x sales) | Buyer dominance | Interdependence    |
+| Low                           | Independence    | Supplier dominance |
+
+Fujimoto (1997), four situations:
+| Fujimoto case                | Power position     | Meaning                    |
+|------------------------------+--------------------+----------------------------|
+| Single sourcing, dedicated   | interdependence    | mutual dependence;         |
+| supplier                     |                    | collaboration likely       |
+| Single sourcing, independent | supplier dominance | supplier has many clients, |
+| supplier                     |                    | more bargaining power      |
+| Multi sourcing, dedicated    | buyer dominance    | supplier depends and       |
+| suppliers                    |                    | competes with others       |
+| Multi sourcing, independent  | independence       | most complex: hard to      |
+| suppliers                    |                    | collaborate                |
+Power balances change over time ("when the balance shifts…"): a dedicated
+supplier that gains other customers moves from interdependence towards
+supplier dominance.
+
+* Worked example
+Supplier X sells 40% of its revenue to Y (high buyer power); Y buys 90% of that
+component from X (high supplier power) → *interdependence*: invest in joint
+development. If X's revenue share from Y drops to 5% while Y still buys 90% →
+*supplier dominance*: Y should qualify a second source or redesign.
+
+* Pitfall
+Dependence is measured on *both* shares; the buyer's size alone does not
+determine power. Independence is not "safe": it makes collaboration hardest.
+
+* Recall
+Draw the power matrix with its two axes defined; place the four Fujimoto cases.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
+\node[align=center] at (2,3) {\textbf{Buyer dominance}\\multi, dedicated};
+\node[align=center] at (6,3) {\textbf{Interdependence}\\single, dedicated};
+\node[align=center] at (2,1) {\textbf{Independence}\\multi, independent};
+\node[align=center] at (6,1) {\textbf{Supplier dominance}\\single, independent};
+\draw[->] (0,-0.5)--(8,-0.5) node[midway,below] {supplier power: \% of buyer's purchases from x};
+\draw[->] (-0.5,0)--(-0.5,4) node[midway,above,rotate=90] {buyer power: \% of x's sales to y};
+\end{tikzpicture}
+Each Fujimoto sourcing pattern lands in a different power quadrant.

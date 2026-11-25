@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       five-s-and-leveling
+:DOMAIN:   operations
+:AREA:     lean
+:KIND:     definition
+:REQUIRES: lean-management
+:SEE:      pull-and-kanban six-sigma business-map
+:ALIASES:  5S seiri seiton seiso seiketsu shitsuke heijunka livellamento gemba-walk SMED
+:END:
+#+title: 5S, production leveling and improvement routines
+#+summary: 5S organizes the workplace (sort, set in order, shine, standardize, sustain); heijunka levels volume and mix; SMED shortens set-ups; gemba walks put managers where the work is.
+
+* Definition
+| Japanese | English       | Meaning                                   |
+|----------+---------------+-------------------------------------------|
+| Seiri    | Sort          | remove what is not needed                 |
+| Seiton   | Set in order  | a place for everything, everything in its |
+|          |               | place                                     |
+| Seiso    | Sweep / shine | clean and inspect                         |
+| Seiketsu | Standardize   | make the first three routine              |
+| Shitsuke | Sustain       | self-discipline, keep it up               |
+Purpose: organize the workplace to optimize performance, cleanliness and
+safety. Black & Decker's Hampstead (Maryland) plant: before/after — "one place
+for each thing, each thing in its place"; simple actions raise productivity and
+cut waste.
+
+* Model
+** Implementing 5S
+1. Plan the action (materials, coordination with departments, schedule).
+2. Form the team (essential).
+3. Assess the work area, the *gemba*: map and photograph, define boundaries,
+   run 5S assessments with a checklist.
+4. Launch 5S: remove unnecessary items (red tag, "use or lose"), simplify
+   access, clean.
+5. Measure results and sustain.
+Checklist questions — Sort: do all team members know the programme? are
+criteria for necessary/unnecessary defined? have unnecessary items been
+removed? do employees know the disposal procedure? Set in order: is there a
+visually marked place for everything? is everything in place? Sweep: are work
+areas, offices and rooms clean and orderly?
+*Gemba walk*: go physically to the workplace, observe processes, talk with
+those who work, identify real waste and problems.
+
+** Heijunka (production leveling)
+Distribute *volumes and product mix* evenly over time to make the flow regular
+and stable: avoid peaks and troughs, reduce waste (stock, waiting, overload),
+improve continuous flow. Part of JIT with mixed-model production, small lots and
+*SMED* (single-minute exchange of die: set-up reduction).
+
+* Worked example
+Weekly demand: 200 A, 100 B, 100 C (5 days). Batch plan: Mon–Tue A, Wed B,
+Thu C… → big stocks of A by Wednesday. Level plan: each day 40 A, 20 B, 20 C,
+in a repeating sequence A-A-B-A-A-C → stable load and stock of one day only.
+Requires short set-ups (SMED).
+
+* Pitfall
+5S is not a cleaning campaign: without standardize and sustain it decays.
+Leveling smooths production, not customer demand itself.
+
+* Recall
+List the 5S in Japanese and English; five implementation steps; explain
+heijunka with a mixed-model sequence.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize]
+\node at (2.5,2.6) {batch}; \node at (8.5,2.6) {levelled};
+\foreach \d/\h/\c in {0/2/kbcyan,1/2/kbcyan,2/2/kbamber,3/2/kbmagenta}{\fill[\c] (\d*1.1,0) rectangle (\d*1.1+0.9,\h);}
+\foreach \d in {0,...,4}{\fill[kbcyan] (6+\d*1.1,0) rectangle (6+\d*1.1+0.9,1); \fill[kbamber] (6+\d*1.1,1) rectangle (6+\d*1.1+0.9,1.5); \fill[kbmagenta] (6+\d*1.1,1.5) rectangle (6+\d*1.1+0.9,2);}
+\node at (2.5,-0.3) {Mon \dots\ Thu}; \node at (8.5,-0.3) {Mon \dots\ Fri};
+\end{tikzpicture}
+Leveling produces every product every day in small quantities.

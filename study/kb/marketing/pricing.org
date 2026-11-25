@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       pricing
+:DOMAIN:   marketing
+:AREA:     marketing-mix
+:KIND:     definition
+:REQUIRES: marketing-mix
+:SEE:      profitability-ratios business-map
+:ALIASES:  prezzo skimming penetrazione prezzi-psicologici prezzi-dinamici break-even margine-di-contribuzione
+:END:
+#+title: Pricing and contribution
+#+summary: Price is the only revenue-generating P; it lies between a cost floor and a perceived-value ceiling, adjusted to competition, with launch strategies (skimming, penetration), product-mix pricing and adjustment manoeuvres.
+
+* Definition
+*Price*: amount of money charged for a product, or more broadly the sum of
+values customers exchange for the benefits of owning or using it. It is the
+only marketing-mix element that produces *revenue*; all the others are costs.
+| Determinant              | Sets           |
+|--------------------------+----------------|
+| Demand (perceived value) | maximum price  |
+| Costs                    | minimum price  |
+| Market / competition     | where in range |
+
+* Model
+** New-product launch
+- *Market skimming*: high launch price to attract buyers with strong desire,
+  lowered gradually to reach wider bands. Example: the first iPhone, 8 GB, from
+  USD 599 to USD 399 six months after launch.
+- *Market penetration*: low launch price to attract many customers and reach
+  high volumes immediately.
+
+** Product-mix pricing
+| Strategy             | Rule                                | Example              |
+|----------------------+-------------------------------------+----------------------|
+| Product line         | steps by cost, demand, rivals       | Tescoma lines        |
+|                      |                                     | (Online, Classic)    |
+| Optional features    | base version + priced options       | fares Regular,       |
+|                      |                                     | Plus, Flexi Plus     |
+| Captive (complement) | needed with main product            | printer cartridges   |
+| By-product           | price production scraps             | sawdust, whey        |
+| Bundle               | set of products below sum of prices | menu, software suite |
+
+** Price adjustments
+Discounts and allowances (time, quantity); *price discrimination* by customer
+(adult/child), product version (packaging), location (front row), time
+(advance booking); *psychological* pricing (high price signals quality);
+*promotional* (below list: "sottocosto", sales); *geographic* (Da Michele pizza:
+different prices in Naples and Milan); *dynamic* (continuous adjustment: online
+auctions, Amazon); international (economic conditions, local competition, laws,
+retail system).
+
+** Price changes and competitor reactions
+Price cut (excess capacity, falling demand, rivals' cuts) → seen as more
+affordable but possibly lower quality. Price rise (cost inflation, VAT rise,
+excess demand, scarce materials) → seen as greedy, or as even higher quality.
+When a competitor cuts its price: has it cut? → will it hurt our share and
+profits? → can/should we act? If yes: cut our price, raise perceived value,
+improve quality and raise price, or launch a low-price "fighting brand".
+
+* Worked example
+Contribution margin per unit = price − variable cost. Price EUR 50, variable
+cost EUR 30 → EUR 20. Fixed costs EUR 100,000 → break-even
+\[ Q^* = \frac{F}{p - v} = \frac{100\,000}{20} = 5\,000 \text{ units}. \]
+A 10% price cut (EUR 45) lowers unit contribution to EUR 15: break-even rises to
+6,667 units, so volume must grow 33% just to keep profit — check before
+matching a competitor's cut.
+
+* Pitfall
+Cost sets the floor, not the price. Skimming needs buyers with high willingness
+to pay and barriers against quick imitation. Discrimination is by customer,
+product, place or time — not arbitrary.
+
+* Recall
+Give the three determinants; contrast skimming and penetration; list five
+mix-pricing strategies with examples; walk through the competitor-cut decision tree.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\begin{axis}[width=8cm,height=5cm,xlabel={units sold (thousand)},ylabel={EUR thousand},xmin=0,xmax=10,ymin=0,ymax=500,legend pos=north west]
+\addplot[domain=0:10] {50*x}; \addlegendentry{revenue}
+\addplot[domain=0:10] {100+30*x}; \addlegendentry{total cost}
+\addplot[only marks,mark=*,kbamber] coordinates {(5,250)};
+\end{axis}
+\end{tikzpicture}
+Break-even where revenue meets total cost: 5,000 units at EUR 50.

@@ -1,0 +1,81 @@
+:PROPERTIES:
+:ID:       balance-sheet
+:DOMAIN:   accounting
+:AREA:     financial-statements
+:KIND:     definition
+:REQUIRES: financial-statements
+:SEE:      liquidity-and-working-capital business-map
+:ALIASES:  stato-patrimoniale attivo passivo patrimonio-netto immobilizzazioni attivo-circolante TFR Inventata-sas
+:END:
+#+title: The balance sheet and the accounting equation
+#+summary: The balance sheet lists assets (fixed and current) against liabilities and equity; every transaction keeps assets equal to liabilities plus equity, as the Inventata sas walk-through shows.
+
+* Model
+\[ \text{Assets} = \text{Liabilities} + \text{Equity} \]
+| Assets (attivo)           | Content                                     |
+|---------------------------+---------------------------------------------|
+| A Receivables from owners | capital subscribed, not yet paid in         |
+| B Fixed assets (net)      | investments serving several years:          |
+| 1 intangible              | research, development, patents, licences    |
+| 2 tangible                | land, buildings, equipment                  |
+| 3 financial               | shareholdings, long-term receivables, bonds |
+| C Current assets          | return to cash within 12 months:            |
+| 1 inventories             | raw materials, semi-finished, finished      |
+| 2 receivables             | customers, group firms, tax authority       |
+| 3 short-term investments  | securities not held long term               |
+| 4 cash and equivalents    | bank and postal deposits, cheques, cash     |
+| D Accruals and deferrals  | ratei e risconti                            |
+
+| Liabilities and equity     | Content                                   |
+|----------------------------+-------------------------------------------|
+| A Equity                   | 1 share capital; 2 reserves; 3 retained   |
+|                            | earnings; 4 profit (loss) for the year    |
+| B Provisions               | future risks and charges, adjusted yearly |
+| C Employee severance (TFR) | owed to employees on leaving              |
+| D Payables                 | bonds, shareholder loans, banks, other    |
+|                            | lenders, customer advances, suppliers     |
+|                            | (incl. invoices to receive), bills, tax,  |
+|                            | social security, other                    |
+| E Accruals and deferrals   |                                           |
+Notes: cash + current accounts = immediate liquidity; short-term securities
+(e.g. Italian BOT); the *bad-debt allowance* (fondo svalutazione crediti) reduces
+receivables by the amount not expected to be collected. Equity is the ideal
+"debt" of the company towards its owners; share capital is permanent funding.
+
+* Worked example
+*Inventata sas* (all EUR):
+| Date  | Event                           | Assets after the event      | Total  |
+|-------+---------------------------------+-----------------------------+--------|
+| 03.01 | founded with capital 20,000     | cash 20,000                 | 20,000 |
+| 16.01 | bank loan 5,000                 | cash 25,000                 | 25,000 |
+| 23.01 | used vehicle 10,000 cash        | cash 15,000, fixed 10,000   | 25,000 |
+| 28.01 | materials 2,000 cash            | cash 13,000, stock 2,000    | 25,000 |
+| 03.02 | materials 2,000, pay in 30 days | stock 4,000; payable 2,000  | 27,000 |
+| 05.02 | sale 500 (cost 300), on credit  | receivable 500, stock 3,700 | 27,200 |
+| 10.02 | building 10,000 cash            | cash 3,000, fixed 20,000    | 27,200 |
+| 15.02 | sale 1,000 (cost 600), cash     | cash 4,000, stock 3,100     | 27,600 |
+| 03.03 | pays the supplier 2,000         | cash 2,000 (payable 0)      | 25,600 |
+Final position: receivables 500, cash 2,000, inventory 3,100, fixed assets
+20,000 = 25,600 = loan 5,000 + capital 20,000 + profit 600.
+Every event changes two items; the totals always balance. A sale changes
+*equity* through profit (revenue − cost of goods); paying a supplier only
+shrinks both sides.
+
+* Pitfall
+Equity is not cash in the bank. Paying a payable is not an expense. Buying a
+fixed asset is not a cost of the year (only its depreciation is).
+
+* Recall
+List the asset classes A–D and liability classes A–E; replay the Inventata sas
+events and compute totals after each.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\draw[kbcyan] (0,0) rectangle (8,4); \draw[kbcyan] (4,0)--(4,4);
+\node at (2,4.3) {Assets 25,600}; \node at (6,4.3) {Liabilities + equity 25,600};
+\draw[kbguide] (0,2.4)--(4,2.4); \node at (2,3.2) {Fixed assets 20,000};
+\node[align=center] at (2,1.2) {Current: stock 3,100\\cash 2,000, receiv. 500};
+\draw[kbguide] (4,3.2)--(8,3.2); \node at (6,3.6) {Loan 5,000};
+\node[align=center] at (6,1.6) {Equity 20,600\\(capital 20,000 + profit 600)};
+\end{tikzpicture}
+Inventata sas on 3 March: both sides total 25,600.

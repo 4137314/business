@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       transaction-costs
+:DOMAIN:   organization
+:AREA:     theories
+:KIND:     definition
+:REQUIRES: business-processes
+:SEE:      sourcing-strategies total-cost-of-ownership digital-decision-making business-map
+:ALIASES:  Williamson costi-di-transazione make-or-buy mercato-gerarchia
+:END:
+#+title: Transaction costs and make-or-buy
+#+summary: Williamson's transaction cost economics (1985) chooses between market, hybrid forms and hierarchy by minimizing transaction costs under bounded rationality, opportunism and transaction frequency.
+
+* Definition
+Transaction Cost Economics (/New Institutional Economics/, Williamson 1985):
+transactions — exchanges of goods and services, relations among firms,
+employees and units — are not governed only by the market, but by the internal
+organization too. The strategic goal is to *minimize transaction costs*:
+searching partners, negotiating, monitoring, enforcing and adapting contracts.
+Three variables make these costs more or less intense:
+| Variable            | Meaning                               | Pushes towards   |
+|---------------------+---------------------------------------+------------------|
+| Bounded rationality | contracts cannot foresee every case   | hierarchy        |
+| Opportunism         | partner may exploit contract gaps     | hierarchy        |
+| Frequency           | repetition justifies dedicated set-up | hybrid/hierarchy |
+(Asset specificity — investments that lose value outside the relationship — is
+the further variable usually added to the list.)
+
+* Model
+Not a binary choice between market and hierarchy: the market may be too
+unstable, the hierarchy too rigid, so management often chooses *mixed forms*.
+Strategic integration continuum (increasing control and integration):
+\[ \text{Market} \to \text{ad-hoc agreements} \to \text{non-equity JV} \to
+   \text{equity JV} \to \text{mergers \& acquisitions} \to \text{Hierarchy} \]
+
+Recent organizational trend — *lean* structures: resources concentrated on the
+core business (BPR, horizontal process structure); many activities outsourced
+(outsourcing, networks of firms); fewer hierarchical levels; short- and long-term
+strategic-operating relations with external firms (suppliers, customers, even
+competitors).
+
+* Worked example
+Make: EUR 110 per component. Buy: quote EUR 95 + qualification, monitoring and
+expected disruption EUR 20 = EUR 115. Price alone says "buy", total cost says
+"make". If volumes are high and the part is custom (frequency + specificity), a
+long-term contract or equity JV may beat both pure options. See
+[[id:total-cost-of-ownership][TCO]].
+
+* Pitfall
+Outsourcing moves work out but keeps coordination costs inside. Transaction
+costs are not the purchase price.
+
+* Recall
+State the three variables, draw the market–hierarchy continuum with four
+intermediate forms, and list the four features of the lean organization.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth}]
+\draw[<->,thick,kbcyan] (0,0)--(11,0);
+\node[above] at (0,0.1) {\small Market}; \node[above] at (11,0.1) {\small Hierarchy};
+\foreach \x/\t in {2.2/{Ad-hoc\\agreements},4.4/{Non-equity\\JV},6.6/{Equity\\JV},8.8/{Mergers \&\\acquisitions}}{\fill[kbamber] (\x,0) circle (2pt); \node[below,align=center] at (\x,-0.15) {\t};}
+\draw[->,kbmagenta] (1,-1.2)--(10,-1.2) node[midway,below] {increasing control and integration};
+\end{tikzpicture}
+Hybrid forms trade market flexibility for hierarchical control.

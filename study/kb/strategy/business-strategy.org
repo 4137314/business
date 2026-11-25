@@ -1,0 +1,116 @@
+:PROPERTIES:
+:ID:       business-strategy
+:DOMAIN:   strategy
+:AREA:     competitive-strategy
+:KIND:     definition
+:REQUIRES: organization-and-performance
+:SEE:      five-forces resource-based-view business-map
+:ALIASES:  strategia corporate business funzionale SCP fit-strategico tattica
+:END:
+#+title: Strategy, objectives and competitive advantage
+#+summary: Strategy links external opportunities with internal resources; it answers "where to compete" (corporate) and "how to compete" (business), and evolved from the S-C-P paradigm to Porter's Value School and the resource-based view.
+
+* Definition
+Strategy is, in extreme synthesis, the *link between the opportunities the firm
+perceives in the external environment and the resources it has or intends to
+acquire* to seize them. It requires *strategic fit* among three elements:
+| Element              | Content                                            |
+|----------------------+----------------------------------------------------|
+| External environment | competitors, customers, suppliers                  |
+| Firm                 | objectives and values, resources and capabilities, |
+|                      | structure and systems                              |
+| Strategy             | the fit between the two                            |
+The main objective of strategy is to ensure that management yields a *return on
+capital higher than its cost*.
+
+"Strategy without tactics is the slowest route to victory; tactics without
+strategy is the noise before defeat" (Sun Tzu).
+| Strategy                                   | Tactics                           |
+|--------------------------------------------+-----------------------------------|
+| general medium-to-long-term plan of action | specific action inside a strategy |
+| aimed at "winning the war"                 | aimed at "winning the battles"    |
+| hard to reverse in the short run           | easier to reverse                 |
+/Strategy/ is the *content* of fundamental choices on the firm–environment
+relation; /strategic planning/ is their *form*: the decision, operating and
+time procedure that matches strategy objectives with available resources.
+
+* Model
+** Two strategic questions, three levels
+| Question / level    | Content                                                    |
+|---------------------+------------------------------------------------------------|
+| Where to compete?   | *corporate (group) strategy*: industries and markets with  |
+|                     | above-average profit; allocates financial and managerial   |
+|                     | resources among businesses                                 |
+| How to compete?     | *business (competitive) strategy*: the way of competing in |
+|                     | one business to earn above-average returns                 |
+| Functional strategy | implements business strategy in production, marketing,     |
+|                     | finance, HR                                                |
+*Strategic scope* (/ambito strategico/): the horizon of competition — which
+markets, which products for each market, which geographic areas, which
+technologies.
+
+** Two determinants of competitive strategy
+- *Industry attractiveness* — depends on competitive factors (concentration,
+  economies of scale, entry and exit barriers, product differentiation,
+  information) which shape prices, costs and investments, hence the profitability
+  of the whole industry.
+- *Competitive position* — where the firm stands inside its industry determines
+  whether its profitability is above or below the industry average.
+Both are dynamic: strategy can change them.
+
+** An industry (settore)
+Set of firms producing goods or services in direct competition, perceived by
+demand as substitutes: complete substitutability (identical products) or
+partial (product differentiation). Market forms: perfect competition,
+oligopoly, monopoly.
+
+** Evolution of strategic thought
+| School                   | Claim                                                 |
+|--------------------------+-------------------------------------------------------|
+| S-C-P paradigm (Harvard) | Structure → Conduct → Performance: industry structure |
+|                          | drives behaviour and profitability (strong version:   |
+|                          | strategies do not matter)                             |
+| Value School (Porter)    | two-way influence: strategy can modify the industry   |
+|                          | structure; performance is not only structural         |
+| Resource-based view      | advantage comes from internal resources and           |
+|                          | competences ([[id:resource-based-view][RBV]])         |
+| Integrated approach      | Porter (market, external) + RBV (resources, internal) |
+Structural variables in S-C-P: *concentration* (market power over demand and
+supply), *economies of scale* (average cost falls as capacity grows), *barriers
+to entry/exit*, *product differentiation* (goods meet the same need but buyers
+recognize differences), *information* (unevenly distributed among sellers and
+buyers).
+
+The Value School's tools: external environment → [[id:five-forces][five forces]];
+competition → [[id:value-chain][strategic groups]]; internal environment →
+[[id:value-chain][value chain]].
+
+* Example
+A car maker decides to enter the e-bike industry (corporate: where); it chooses
+to compete through premium design and dealer service (business: how); marketing
+then sets channels and prices (functional). A price cut for one quarter is a
+tactic, not a strategy.
+
+* Pitfall
+Corporate strategy chooses businesses; business strategy chooses the way to win
+in one of them. S-C-P is deterministic; Porter adds that the firm can act on the
+structure.
+
+* Recall
+Define strategy and strategic fit; give the two questions and three levels;
+contrast strategy and tactics; summarize S-C-P → Porter → RBV.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.6cm,minimum height=0.8cm}]
+\node[b] (s) at (0,2.4) {Industry structure};
+\node[b] (c) at (0,1.2) {Conduct};
+\node[b] (p) at (0,0) {Performance};
+\draw[->] (s)--(c); \draw[->] (c)--(p);
+\node at (0,3.3) {S-C-P (Harvard)};
+\node[b] (s2) at (5.5,2.4) {Industry structure};
+\node[b,draw=kbamber] (st) at (5.5,1.2) {Competitive strategy};
+\node[b] (p2) at (5.5,0) {Performance};
+\draw[->] (s2)--(st); \draw[->] (st)--(p2); \draw[->,kbamber] (st.east)..controls (7.6,1.4) and (7.6,2.2)..(s2.east);
+\node at (5.5,3.3) {Porter (Value School)};
+\end{tikzpicture}
+Porter turns the one-way S-C-P chain into a two-way relation between firm and industry.

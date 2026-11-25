@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       resource-based-view
+:DOMAIN:   strategy
+:AREA:     competitive-strategy
+:KIND:     definition
+:REQUIRES: business-strategy
+:SEE:      digital-decision-making business-map
+:ALIASES:  RBV risorse capacità competenze vantaggio-competitivo-sostenibile
+:END:
+#+title: Resources, capabilities and competitive advantage
+#+summary: The resource-based view sees the firm as a heterogeneous bundle of resources and competences; capabilities (organizational routines) turn scarce, durable, non-transferable and non-replicable resources into sustained advantage.
+
+* Definition
+*Critique of industry analysis*: in the 1980s strategic analysis focused almost
+only on the firm–environment relation (five forces); internal analysis was
+confined to implementation; firm characteristics are not determined a priori
+by the strategies adopted; strategy is not only allocating resources to raise
+long-run profitability but also expanding and strengthening resources and
+competences themselves.
+
+The RBV sees the firm as a *heterogeneous set of resources and competences*,
+the priority basis for competitive advantage:
+\[ \text{Resources} \rightarrow \text{Capabilities (organizational routines)}
+   \rightarrow \text{Competitive advantage} \]
+
+* Model
+| Resource type | Content                              | Ease of valuation      |
+|---------------+--------------------------------------+------------------------|
+| Tangible      | financial resources, material assets | easiest; less and less |
+|               |                                      | decisive for advantage |
+| Intangible    | technological knowledge (patents,    | medium                 |
+|               | copyright), brands, reputation       |                        |
+| Human         | competences, knowledge, analysis and | very hard to value and |
+|               | decision skills of people            | manage                 |
+*Competences* derive from the firm's ability to combine and coordinate
+resources (organizational competences: people collaborating cohesively). They
+are analysed *comparatively* — a competence matters by its position relative to
+other firms' — through [[id:value-chain][value-chain analysis]].
+*Strategic resources* are scarce and relevant. Advantage is *durable* if
+resources and competences are:
+| Condition        | Question                                     |
+|------------------+----------------------------------------------|
+| Durable          | does it wear out or become obsolete fast?    |
+| Non-transferable | can a rival buy it or hire it away?          |
+| Non-replicable   | can a rival build the same thing internally? |
+
+** Integrated approach
+Porter's model looks at the *market* (external potential); the RBV at
+*resources* (internal potential). Only an integrated view gives a wide enough
+knowledge base to judge a strategy against both the structural/local
+environment and the firm's resources, crossing competitive comparison with the
+firm's unique, inimitable identity.
+
+* Example
+Coca-Cola's recipe and brand (intangible), bottling network (tangible) and
+marketing know-how (human, routines) are durable and hard to replicate — hence
+differentiation that outlasts imitation. A generic machine any rival can buy is
+a resource but not a source of sustained advantage.
+
+* Pitfall
+A resource is not an advantage until a capability deploys it in a way customers
+value. Tangible ≠ strategic: the easiest resources to value are the least
+decisive.
+
+* Recall
+Draw resources → capabilities → advantage; classify three resource types; state
+the three durability conditions; explain why Porter and RBV must be integrated.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbviolet,align=center,minimum width=3.6cm,minimum height=0.8cm}]
+\node[b,draw=kbamber] (v) at (0,3) {Competitive advantage};
+\node[b] (c) at (0,1.5) {Capabilities\\(organizational routines)};
+\node[b,draw=kbcyan] (r) at (0,0) {RESOURCES};
+\draw[->,thick] (r)--(c); \draw[->,thick] (c)--(v);
+\node[align=left] at (4.6,0) {tangible, intangible, human};
+\node[align=left] at (4.6,3) {durable if: durable,\\non-transferable, non-replicable};
+\end{tikzpicture}
+Advantage is built bottom-up from resources through routines.

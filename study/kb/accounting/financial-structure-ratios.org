@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       financial-structure-ratios
+:DOMAIN:   accounting
+:AREA:     financial-analysis
+:KIND:     definition
+:REQUIRES: balance-sheet liquidity-and-working-capital
+:SEE:      profitability-ratios business-map
+:ALIASES:  indice-di-struttura-primario ISP indice-di-solidità IS autonomia-finanziaria copertura-immobilizzazioni
+:END:
+#+title: Funding structure and fixed-asset coverage
+#+summary: The primary structure ratio (equity / fixed assets) measures self-coverage of long-term investments; the solidity ratio (liabilities / equity) measures dependence on external funding.
+
+* Model
+| Ratio              | Formula                        | Course thresholds       |
+|--------------------+--------------------------------+-------------------------|
+| Primary ISP        | \( PN / AI \)                  | < 0.5 critical; 0.5–0.7 |
+| (self-cover        |                                | monitor; > 0.7 optimal  |
+| of fixed)          |                                |                         |
+| Secondary coverage | \( (PN + P_{con}) / AI \)      | ≥ 1: long-term sources  |
+|                    |                                | cover fixed assets      |
+| Solidity IS        | \( (P_{cor} + P_{con}) / PN \) | > 2 critical; 1–2       |
+| ("autonomy")       |                                | monitor; < 1 optimal    |
+IS has liabilities in the *numerator*: higher = more dependence on third
+parties (worse). It counts all liabilities, operating payables included, not
+only financial debt.
+Why it matters: a mismatch between cash in and out could force the firm to sell
+investments or fixed assets to raise cash; excess liquidity could instead be
+invested at better returns than a current account.
+
+* Worked example
+*ALFA 2012*: PN 646,086; AI 232,458; Pcor 1,363,449; Pcon 472,746.
+\[ ISP = \frac{646{,}086}{232{,}458} = 2.78 \quad (\text{fixed assets fully self-covered}) \]
+\[ IS = \frac{1{,}363{,}449 + 472{,}746}{646{,}086} = \frac{1{,}836{,}195}{646{,}086} = 2.84 > 2
+   \;\Rightarrow\; \text{critical dependence on external funds} \]
+The increase in IS comes mainly from bank debt, which the banks granted after
+their own solvency checks — combine with [[id:liquidity-and-working-capital][MT and CCN]] and the notes.
+Generic case: PN 60, AI 100, Pcor 40, Pcon 50 → ISP 0.6 (monitor), secondary
+coverage 1.1, IS 1.5 (monitor); total assets 150, current assets 50, CCN 10.
+
+* Pitfall
+Names vary ("solidity", "autonomy", "leverage"): always write the formula.
+Thresholds are indicative, not guarantees; read trends, the sector and debt
+maturities. Negative or tiny equity makes IS meaningless.
+
+* Recall
+Write ISP and IS with thresholds; compute them for ALFA; explain why financing
+a machine with short-term debt is risky even if profitable.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\begin{axis}[xbar,width=8cm,height=4cm,xmin=0,xmax=3.5,symbolic y coords={IS,ISP},ytick=data,nodes near coords,bar width=10pt,xlabel={ALFA 2012}]
+\addplot[fill=kbcyan] coordinates {(2.78,ISP) (2.84,IS)};
+\end{axis}
+\end{tikzpicture}
+Good self-coverage of fixed assets, but heavy reliance on external funding overall.

@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       five-forces
+:DOMAIN:   strategy
+:AREA:     competitive-strategy
+:KIND:     model
+:REQUIRES: business-strategy
+:SEE:      generic-strategies value-chain business-map
+:ALIASES:  cinque-forze Porter potere-contrattuale barriere-all-entrata sostituti
+:END:
+#+title: Porter: the five competitive forces
+#+summary: Industry profitability depends on rivalry among existing firms, the bargaining power of suppliers and buyers, the threat of new entrants and the threat of substitutes.
+
+* Model
+Porter (1980): competitive strategy aims at a profitable and sustainable
+position against the forces that determine competition in an industry.
+| # | Force          | Stronger (worse for firms) when...                   |
+|---+----------------+------------------------------------------------------|
+| 1 | Rivalry        | many similar-size rivals; slow growth; little        |
+|   |                | differentiation (price war); high fixed costs; high  |
+|   |                | exit barriers (specialized, costly machines)         |
+| 2 | Supplier power | few big suppliers; costly switching; no substitute   |
+|   |                | inputs; dispersed weak customers; suppliers may      |
+|   |                | consolidate or integrate forward                     |
+| 3 | Buyer power    | few large buyers; many small suppliers with high     |
+|   |                | fixed costs; substitutes exist; cheap switching;     |
+|   |                | price-sensitive buyers; backward integration threat  |
+| 4 | New entrants   | low barriers: no patents, no scale economies, low    |
+|   |                | fixed costs, no experience curve, free access to raw |
+|   |                | materials and channels, no state barriers            |
+| 5 | Substitutes    | good price/performance of substitutes, low brand     |
+|   |                | loyalty, low switching costs                         |
+
+** Determinants in detail
+- *Rivalry*: concentration and balance among competitors, industry growth, fixed
+  costs, product differentiation. *Exit barriers*: specialized investments,
+  one-off exit costs, interrelations with other businesses, emotional barriers,
+  social and government constraints.
+- *Suppliers / buyers* (symmetric lists): number of important players,
+  availability of substitutes, switching costs, threat of forward (downstream)
+  or backward (upstream) integration, their contribution to quality, their
+  contribution to industrial cost.
+- *Entry barriers*: economies of scale, product differentiation, brand identity,
+  access to distribution channels, capital requirements, absolute cost
+  advantages; *government measures*: protection, industry regulation, duties
+  and exchange rates.
+- *Substitutes*: almost interchangeable products, conversion costs,
+  aggressiveness and profitability of substitute producers, price–value of the
+  substitute.
+
+* Worked example
+*Coca-Cola* (soft drinks):
+| Force          | Level     | Why                                         |
+|----------------+-----------+---------------------------------------------|
+| New entrants   | low       | very high barriers: brand, scale, bottlers  |
+| Supplier power | low       | commodities (sugar, cans), efficient buying |
+| Buyer power    | medium    | demanding large retail chains (GDO)         |
+| Substitutes    | high      | water, juices, healthy alternatives         |
+| Rivalry        | very high | Pepsi and others                            |
+Strategy chosen: *global differentiation* — brand and value, innovation,
+capillary distribution. Supported in the value chain by logistics and
+production (economies of scale), marketing and sales (iconic brand), R&D (new
+products), procurement (purchasing power).
+
+* Method
+For an exam case: (1) define the industry; (2) rate each force low/medium/high
+with two determinants each; (3) conclude on attractiveness; (4) state which
+[[id:generic-strategies][generic strategy]] defends best and which value-chain
+activities support it.
+
+* Pitfall
+A buyer with many alternatives is powerful even if small. Substitutes satisfy
+the same need with a *different* product (train vs plane); a competitor sells
+the same product. Strengths: good for industry analysis and input to SWOT.
+Weaknesses: built for single businesses, ignores portfolio synergies of large
+groups; can underrate core competences — combine with the value chain.
+
+* Recall
+Draw the five forces, give three determinants of each, rate them for Coca-Cola.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,align=center,minimum width=2.8cm,minimum height=0.9cm}]
+\node[b,draw=kbamber] (r) at (0,0) {Rivalry among\\existing firms};
+\node[b] (e) at (0,2.2) {Threat of\\new entrants};
+\node[b] (s) at (-4.4,0) {Supplier\\power};
+\node[b] (b) at (4.4,0) {Buyer\\power};
+\node[b] (t) at (0,-2.2) {Threat of\\substitutes};
+\draw[->] (e)--(r); \draw[->] (s)--(r); \draw[->] (b)--(r); \draw[->] (t)--(r);
+\end{tikzpicture}
+The four outer forces shape the intensity of rivalry and therefore industry profitability.

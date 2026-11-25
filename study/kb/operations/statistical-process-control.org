@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       statistical-process-control
+:DOMAIN:   operations
+:AREA:     quality
+:KIND:     definition
+:REQUIRES: quality-management
+:SEE:      six-sigma business-map
+:ALIASES:  SPC carte-di-controllo capability Cp UCL LCL variabilità
+:END:
+#+title: Process variation and control charts
+#+summary: Natural process variation often follows a normal distribution; control limits at ±3σ separate random from assignable causes, and capability Cp compares the specification range with 6σ.
+
+* Definition
+Process performance measured over time varies. Question: is a strange point
+random variation or a change in the process to investigate? Sampling call times
+day after day builds a histogram that fits a *normal distribution*.
+| Range | Share of points |
+|-------+-----------------|
+| ±1σ   | 68%             |
+| ±2σ   | 95.4%           |
+| ±3σ   | 99.7%           |
+*Natural variation* = 99.7% of the distribution = ±3σ around the mean.
+\[ C_p = \frac{\text{specification range}}{\text{natural variation}}
+       = \frac{UTL - LTL}{6\sigma} \qquad \text{capable if } C_p > 1 \]
+
+* Model
+Control chart: centre line (mean), UCL and LCL at ±3σ. A point outside →
+likely *assignable cause* → process out of control. Also investigate unlikely
+patterns even inside the limits:
+- alternating and erratic behaviour;
+- suspiciously average behaviour (all points hugging the centre);
+- two points near a control limit;
+- five points on one side of the centre line;
+- an apparent trend in one direction;
+- a sudden change of level.
+Control limits come from the process; specification (tolerance) limits come
+from the customer — different things.
+
+* Worked example
+Call centre: mean 100 s, σ = 20 s → natural variation 40–160 s. Specification
+40–160 s → \( C_p = 120/120 = 1.0 \): barely capable. Cutting σ to 15 s gives
+\( C_p = 120/90 = 1.33 \). A call of 175 s is above UCL = 160 s → investigate.
+
+* Pitfall
+In control ≠ capable: a stable process can still produce out of specification.
+Cp ignores centring (a shifted mean can fail with Cp > 1).
+
+* Recall
+State the 68/95/99.7 rule; compute Cp; list six patterns to investigate.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\begin{axis}[width=9cm,height=5cm,xlabel={sample},ylabel={call time (s)},ymin=20,ymax=190,xmin=0,xmax=13]
+\addplot[kbguide,dashed,domain=0:13] {160}; \addplot[kbguide,dashed,domain=0:13] {40}; \addplot[kbguide,domain=0:13] {100};
+\addplot[mark=*,kbcyan] coordinates {(1,95) (2,110) (3,88) (4,104) (5,120) (6,92) (7,99) (8,115) (9,85) (10,108) (11,97) (12,175)};
+\node at (axis cs:2,168) {UCL}; \node at (axis cs:2,48) {LCL};
+\end{axis}
+\end{tikzpicture}
+The last point exceeds the UCL: an assignable cause is likely.

@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       digital-decision-making
+:DOMAIN:   operations
+:AREA:     digitalization
+:KIND:     definition
+:REQUIRES: business-processes
+:SEE:      transaction-costs order-fulfilment business-map
+:ALIASES:  razionalità-limitata Simon conoscenza-tacita digitalizzazione industria-4.0 decision-support BLM Novotic
+:END:
+#+title: Bounded rationality and digital transformation
+#+summary: Operations decisions are made under uncertainty and bounded rationality, often on tacit experience; digitalization makes information and rules explicit, Industry 4.0 technologies support or automate decisions, as in the BLM and Novotic cases.
+
+* Definition
+*Uncertainty*: lack of available information relative to what is needed to
+complete a task (Tushman and Nadler 1987); decisions rely on forecasts with
+errors. *Absolute rationality* (homo economicus) assumes perfect logic; real
+decision makers have limited information (attention, memory, understanding,
+communication), cannot foresee consequences, cannot control all behaviour.
+*Bounded rationality* (Herbert Simon): decisions are *satisficing*, not optimal.
+*Tacit knowledge*: experience-based, hard to formalize — a senior technician
+"hearing" a machine about to fail, tricks of the trade, knowing whom to involve
+outside the org chart.
+Limits of experience-based decisions: low replicability, dependence on key
+people, limited use of large data, cognitive biases, hard systematic learning,
+low transparency, high variability of outcomes, poor handling of complexity.
+
+* Model
+| Feature     | Experience-based               | Data-driven                         |
+|-------------+--------------------------------+-------------------------------------|
+| Source      | personal experience, intuition | company data, analytical tools      |
+| Limits      | individual perspective         | needs information systems and tools |
+| Support     | limited                        | improves consistency and quality    |
+| Integration | not integrated                 | integrated                          |
+| Analysis    | perceptive                     | analytical                          |
+*Digitalization*: using digital technologies to improve processes — a change in
+how information, activities and decisions are organized, not just software or
+replacing people. Prerequisites: reliable data, integrated information systems,
+understandable processes, adequate skills; otherwise technology amplifies
+existing problems. Manage the balance *standardization vs flexibility*: decide
+what to formalize and what to leave to human judgement.
+*Decision support*: responsibility stays with the person interpreting the
+output. *Decision automation*: needs controls, thresholds, accountability,
+error handling; the more critical, ambiguous or irreversible the decision, the
+more human supervision and explainability.
+When to digitalize: frequent, repetitive but complex processes; many
+simultaneous variables; high cost of error; need for traceability; critical
+cross-functional coordination; knowledge concentrated in few people. Harder
+when data are scarce/unreliable, the process keeps changing, or judgement is
+unobservable. Impacts: operational efficiency (automation, ERP), strategic
+effectiveness (forecasting, BI), better products/services (connected products),
+better customer experience (virtual assistants).
+
+** Industry 4.0
+1.0 (1780) mechanization, steam → 2.0 (1870) electricity, mass production →
+3.0 (1970) computers, automation → 4.0 (2011, German government) cyber-physical
+systems, IoT → 5.0 (2020) mass customization, human–cyber-physical systems.
+Enabling technologies: big data and analytics, AI, cloud, augmented reality,
+industrial IoT, 3D printing, robots, digital twins/simulation, blockchain.
+IIoT reduces uncertainty on machine state; digital twins simulate scenarios;
+AI predicts and prioritizes; cloud enables collaboration; blockchain gives
+traceability and trust; AR supports remote assistance and training. Across the
+value chain: e.g. procurement → analytics on suppliers, AI negotiation,
+blockchain controls, cloud platforms.
+
+* Worked example
+*Adige BLM Group* (Levico, tube and sheet-metal machines): lots of data in
+fragmented databases (SAP, C4C), decisions by experience. *Project BIG*: AI
+demand forecasting with historical and market data → accuracy 84%, 92% and 88%
+on three product lines (LT7, LT-FIB, LT8), better production planning.
+*Project SARA*: Llama-based AI agent with retrieval-augmented generation (RAG)
+searching assembly instructions; solutions found are added to its database.
+*Novotic* (Rovereto, custom robotic cells): *Forge* assistant (Microsoft Graph,
+SharePoint, RAG) to reuse documents for offers; AI quality control classifying
+assembly curves; *DataBlade* turning DXF drawings into features for quoting;
+a transformer-based API proposing corrective straightening sequences — an
+operational decision-support system.
+
+* Pitfall
+Data availability does not guarantee better decisions (AI can invent
+analytics). Digitalization without process clarity amplifies chaos.
+
+* Recall
+Define bounded rationality and tacit knowledge; list four prerequisites and the
+when-to-digitalize criteria; distinguish decision support and automation; cite
+the BLM and Novotic cases.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth}]
+\foreach \i/\y/\t in {0/1780/{1.0 steam},1/1870/{2.0 electricity},2/1970/{3.0 automation},3/2011/{4.0 CPS, IoT},4/2020/{5.0 human-centric}}{\fill[kbcyan] (2.4*\i,0) circle (3pt); \node[above] at (2.4*\i,0.15) {\y}; \node[below,align=center] at (2.4*\i,-0.15) {\t};}
+\draw[->] (-0.4,0)--(10.2,0);
+\end{tikzpicture}
+Each revolution changes how information and decisions are organized.

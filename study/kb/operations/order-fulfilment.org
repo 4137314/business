@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       order-fulfilment
+:DOMAIN:   operations
+:AREA:     process-design
+:KIND:     definition
+:REQUIRES: volume-variety-processes
+:SEE:      supply-chain-management digital-decision-making business-map
+:ALIASES:  punto-di-disaccoppiamento MTS ATO MTO ETO PTO distinta-base BOM MRP ERP MPS
+:END:
+#+title: The order decoupling point, BOM, MRP and ERP
+#+summary: The decoupling point separates forecast-driven (push) from order-driven (pull) activities, giving MTS, ATO, MTO, PTO and ETO; the bill of materials, MRP and ERP turn demand into material and production plans.
+
+* Model
+** Order fulfilment strategies
+| Strategy              | Starts after the order      | Example                     |
+|-----------------------+-----------------------------+-----------------------------|
+| MTS make to stock     | only delivery               | Coca-Cola: all on forecast  |
+| ATO assemble to order | assembly                    | Dell: PC assembled on order |
+| MTO make to order     | production                  | Scavolini kitchens          |
+| PTO purchase to order | purchasing of special parts | special materials ordered   |
+| ETO engineer to order | design                      | Fincantieri ships           |
+The *decoupling point* (DP) divides order-driven activities (*pull*, downstream)
+from plan-driven ones (*push*, upstream, on forecast). Moving it upstream
+shortens stock but lengthens delivery time.
+
+** Bill of materials (BOM)
+Structured list of all components, materials and sub-assemblies needed for a
+product, with quantities and hierarchy: *what* is needed, *how much*, *how it
+is organized* (tree: product → sub-assemblies → parts).
+
+** MRP and ERP
+*MRP* (Material Requirements Planning): from finished-goods demand (*MPS*,
+Master Production Schedule), the BOM and inventory records, computes which
+materials are needed, in which quantity and when → production plan (PP).
+*ERP* (Enterprise Resource Planning): integrated information system planning
+and controlling all resources and processes on one shared database; includes
+MPS, MRP and PP.
+
+* Worked example
+A bicycle = 1 frame + 2 wheels; a wheel = 1 rim + 36 spokes. MPS: 100 bikes in
+week 6. Stock: 20 wheels, 0 rims. Gross wheels = 200, net = 180 → rims 180,
+spokes \( 180 \times 36 = 6{,}480 \). With 1-week lead times, wheels are released
+in week 5 and rims/spokes ordered in week 4 (lead-time offsetting).
+
+* Pitfall
+MRP is only as good as the BOM and stock records ("garbage in, garbage out").
+ATO needs modular products; MTO is not ETO (design already exists).
+
+* Recall
+Place the DP for the five strategies with an example each; define BOM, MPS,
+MRP, ERP; run a two-level MRP explosion.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth}]
+\foreach \i/\t in {0/Design,1/Purchase,2/Make,3/Assemble,4/Deliver}{\node[draw=kbcyan,minimum width=1.8cm] (n\i) at (2.2*\i,0) {\t};}
+\foreach \i [evaluate=\i as \j using int(\i+1)] in {0,...,3}{\draw[->] (n\i)--(n\j);}
+\foreach \x/\t/\y in {7.7/MTS/0.6,5.5/ATO/1.0,3.3/MTO/1.4,1.1/PTO/1.8,-1.1/ETO/2.2}{\draw[kbamber,thick] (\x,-0.4)--(\x,\y) node[above] {\t};}
+\node[kbguide] at (0.5,-0.9) {upstream: push on forecast};
+\node[kbguide] at (7.5,-0.9) {downstream: pull on order};
+\end{tikzpicture}
+Each strategy places the decoupling point (amber line) at a different stage.

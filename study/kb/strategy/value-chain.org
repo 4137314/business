@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       value-chain
+:DOMAIN:   strategy
+:AREA:     competitive-strategy
+:KIND:     definition
+:REQUIRES: business-processes business-strategy
+:SEE:      resource-based-view supply-chain-management business-map
+:ALIASES:  catena-del-valore raggruppamenti-strategici margine attività-primarie attività-di-supporto
+:END:
+#+title: The value chain and strategic groups
+#+summary: Strategic groups map competitors on the variables that separate them; the value chain breaks a business unit into primary and support activities so that the margin (value minus cost) can be traced to each activity.
+
+* Model
+** Strategic groups (raggruppamenti strategici)
+Strategic mapping represents graphically the competitors of an industry in
+homogeneous groups, based on aggregation variables. Possible dimensions:
+production specialization, degree of vertical integration, cost structure and
+level, product quality, brand identification, distribution channels, range
+breadth, geographic extension. Choose variables expressing *mobility barriers*
+(brand, sales networks) and reflecting different strategic actions; often draw
+several maps.
+
+US airline case: nine main firms (American, United, Delta, America West,
+Southwest, TWA, NWA, USAir, Continental); variables *cost per ASM* (available
+seat-mile: easy to compute, similar cost structures; costs are inversely
+proportional to average flight distance) and *quality* AQR (Airline Quality
+Rating, National Institute for Aviation Research, Wichita State University).
+| Group               | Members                      | Position                |
+|---------------------+------------------------------+-------------------------|
+| Differentiation     | American, United, Delta      | high quality            |
+| Cost leadership     | America West                 | low cost, low quality   |
+| Focus               | Southwest                    | quality niche, low cost |
+| Stuck in the middle | TWA, NWA, USAir, Continental | low quality, high cost  |
+
+** The value chain
+Built for a single strategic business unit (SBU), interpreted inside the wider
+*value system*: value chains of suppliers → the SBU → channels → customers.
+\[ \text{Margin} = \text{Value created} - \text{Costs incurred} \]
+Value = total revenue = price × units sold, i.e. what buyers are willing to pay.
+| Primary activity    | Content                                           |
+|---------------------+---------------------------------------------------|
+| Inbound logistics   | receiving, storage, handling, warehouse, stock    |
+|                     | control, vehicle scheduling, returns to suppliers |
+| Operations          | machining, assembly, packaging, maintenance       |
+| Outbound logistics  | finished-goods storage, delivery vehicles, order  |
+|                     | scheduling and processing                         |
+| Marketing and sales | advertising, sales force, offers, channel choice, |
+|                     | pricing policy                                    |
+| After-sales service | installation, testing, training, spare parts,     |
+|                     | assistance                                        |
+
+| Support activity       | Content                                          |
+|------------------------+--------------------------------------------------|
+| Procurement            | procedure for buying materials, supplies, assets |
+| Technology development | know-how, procedures, technological input        |
+| Human resources        | selection, hiring, evaluation, careers, unions   |
+| Firm infrastructure    | general management, planning, finance,           |
+|                        | accounting, legal, quality control               |
+Primary activities create the product physically, transfer it to the buyer and
+assist after sale — tied to the operating process. Support activities sustain
+primary ones and also generate value. Analysing each activity's contribution is
+a *disaggregation* process: e.g. marketing and sales split into advertising,
+sales-force management, pricing, promotion, channels.
+
+* Worked example
+Coca-Cola's global differentiation is supported by: logistics and production →
+economies of scale; marketing and sales → iconic brand; R&D (technology
+development) → new products; procurement → purchasing power. IKEA's cost
+leadership lives in outbound logistics (customer self-transport) and operations
+(flat-pack design).
+
+* Pitfall
+The value chain belongs to one business unit, not to a whole group. Support
+activities are not "overhead without value". Margin is value minus *all*
+activity costs.
+
+* Recall
+Draw the value chain from memory with five primary and four support activities;
+draw the airline strategic map and name its four groups.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize]
+\draw[kbcyan] (0,0)--(10,0)--(11.5,2.5)--(10,5)--(0,5)--cycle;
+\foreach \y/\t in {4.55/Firm infrastructure,3.95/Human resource management,3.35/Technology development,2.75/Procurement}{\draw[kbguide] (0,\y-0.3)--(10.2,\y-0.3); \node at (5,\y) {\t};}
+\foreach \x/\t in {0/{Inbound\\logistics},2/{Operations},4/{Outbound\\logistics},6/{Marketing\\and sales},8/{After-sales\\service}}{\draw[kbguide] (\x,0)--(\x,2.45); \node[align=center] at (\x+1,1.2) {\t};}
+\node[rotate=-60,kbamber] at (10.7,3.6) {MARGIN}; \node[rotate=60,kbamber] at (10.7,1.4) {MARGIN};
+\node at (5,-0.4) {Primary activities}; \node[rotate=90] at (-0.4,3.6) {Support};
+\end{tikzpicture}
+Every activity adds cost; the margin exists only if buyers value the whole chain above that cost.

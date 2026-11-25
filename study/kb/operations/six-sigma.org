@@ -1,0 +1,70 @@
+:PROPERTIES:
+:ID:       six-sigma
+:DOMAIN:   operations
+:AREA:     quality
+:KIND:     method
+:REQUIRES: statistical-process-control improvement-approaches
+:SEE:      lean-management business-map
+:ALIASES:  six-sigma DMAIC PDCA black-belt DPMO Ishikawa Pareto 5-whys
+:END:
+#+title: Six Sigma and DMAIC
+#+summary: Six Sigma (Motorola, 1980s) reduces variation to near-zero defects (3.4 DPMO); it uses customer-driven goals, the DMAIC cycle, evidence-based tools and a belt organization.
+
+* Definition
+Born at *Motorola* in the 1980s against quality problems; reduce variability to
+"almost zero defects". Four meanings: a *vision* (highest quality at lowest
+cost), a *metric* (99.9997% performance), a *benchmark* (vs best in class),
+an *application of statistical tools* to measure, analyse, improve and control.
+| Sigma level | DPMO    |
+|-------------+---------|
+| 2           | 308,537 |
+| 3           | 66,807  |
+| 4           | 6,210   |
+| 5           | 233     |
+| 6           | 3.4     |
+(DPMO = defects per million opportunities; the table assumes the conventional
+1.5σ long-term shift of the mean.) Capability: \( C_p = (UTL-LTL)/6\sigma \),
+see [[id:statistical-process-control][SPC]].
+
+* Model
+Elements: customer-driven objectives, structured improvement cycle, process
+redesign, evidence-based problem solving, structured training and
+organization — *master black belts*, *black belts*, *green belts*.
+| PDCA (Deming) | DMAIC   | Content                                         |
+|---------------+---------+-------------------------------------------------|
+| Plan          | Define  | identify problem, define requirements, set goal |
+|               | Measure | gather data, refine problem, measure inputs and |
+|               |         | outputs                                         |
+|               | Analyse | develop hypotheses, find root causes            |
+| Do, Check     | Improve | develop and test ideas, implement, validate     |
+| Act           | Control | set standards, deal with new problems           |
+Root-cause tools: flow charts, scatter diagrams, *5 whys*, *cause–effect
+(Ishikawa, fishbone)* diagrams, *Pareto* diagrams.
+Ishikawa example — *toner cartridges returned* (HP): people (dealer managers,
+training, expectation setting, complacency), systems (price protection,
+warranty, bulk returns), materials (faulty or empty cartridge, broken tab,
+non-HP refilled, damaged product), processes (instructions, obsolescence,
+manufacture, faint print).
+
+* Worked example
+5 whys: machine stopped → fuse blew → overload → bearing not lubricated →
+lubrication pump worn → no preventive maintenance schedule (root cause).
+A process with 500 defects per million is between 4σ and 5σ; reaching 6σ means
+cutting defects by more than 99%.
+
+* Pitfall
+3.4 DPMO is not the normal tail beyond 6σ: it includes the 1.5σ shift. DMAIC
+is a project method; Six Sigma is not only a statistic.
+
+* Recall
+Give the sigma/DPMO table; map DMAIC on PDCA; draw a fishbone with four
+categories.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize]
+\draw[thick,->] (0,0)--(8,0) node[right,align=left] {toner cartridges\\returned};
+\foreach \x/\t in {1.5/people,4.5/systems}{\draw (\x,1.4)--(\x+1.4,0); \node[above] at (\x,1.4) {\t};}
+\foreach \x/\t in {1.5/materials,4.5/processes}{\draw (\x,-1.4)--(\x+1.4,0); \node[below] at (\x,-1.4) {\t};}
+\node at (2,0.8) {training}; \node at (5.1,0.8) {warranty}; \node at (2,-0.8) {empty}; \node at (5.1,-0.8) {faint print};
+\end{tikzpicture}
+The fishbone groups candidate causes before data confirm the root cause.

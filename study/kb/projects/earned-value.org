@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       earned-value
+:DOMAIN:   projects
+:AREA:     project-management
+:KIND:     definition
+:REQUIRES: project-foundations
+:SEE:      critical-path business-map
+:ALIASES:  earned-value BCWS BCWP ACWP SV CV SPI CPI valore-guadagnato
+:END:
+#+title: Earned value and project variances
+#+summary: Earned value compares planned cost of scheduled work (BCWS), budgeted cost of work performed (BCWP) and actual cost (ACWP) to separate schedule and cost deviations.
+
+* Definition
+| Metric | Name                               | Meaning                       |
+|--------+------------------------------------+-------------------------------|
+| BCWS   | budgeted cost of work scheduled    | planned value of work that    |
+|        | (planned value, PV)                | should be done by now         |
+| BCWP   | budgeted cost of work performed    | budget value of work actually |
+|        | (earned value, EV)                 | done                          |
+| ACWP   | actual cost of work performed (AC) | cost actually incurred        |
+\[ CV = BCWP - ACWP \qquad SV = BCWP - BCWS \]
+\[ CPI = \frac{BCWP}{ACWP} \qquad SPI = \frac{BCWP}{BCWS} \]
+CV > 0 / CPI > 1 → under budget; SV > 0 / SPI > 1 → ahead of schedule. Control
+watches T (progress vs plan, milestones), R (allocation vs plan), C (BCWS,
+ACWP, BCWP), Q (conformance, defects, rework).
+
+* Worked example
+At week 10: planned work worth 100,000 (BCWS); work done worth 80,000 at budget
+(BCWP); actual spend 90,000 (ACWP).
+| Indicator | Value                      | Reading                   |
+|-----------+----------------------------+---------------------------|
+| CV        | 80,000 − 90,000 = −10,000  | over budget               |
+| SV        | 80,000 − 100,000 = −20,000 | behind schedule           |
+| CPI       | 0.89                       | 89 cents of value per EUR |
+| SPI       | 0.80                       | 80% of planned progress   |
+If the total budget (BAC) is 200,000 and efficiency stays the same, estimate at
+completion \( EAC = BAC / CPI = 225{,}000 \).
+Comparing actual costs with planned expenditure alone ("we spent 90 vs 100
+planned, so we are fine") would be misleading: earned value shows the project
+is both late and over budget.
+
+* Pitfall
+Comparing ACWP with BCWS mixes schedule and cost effects. BCWP needs an honest
+measure of physical progress.
+
+* Recall
+Define the three metrics; compute CV, SV, CPI, SPI for the example; explain why
+"spent less than planned" can be bad news.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\begin{axis}[width=9cm,height=5cm,xlabel={week},ylabel={EUR thousand},xmin=0,xmax=20,ymin=0,ymax=210,legend pos=north west]
+\addplot[domain=0:20,kbcyan,thick] {200/(1+exp(-0.45*(x-10)))}; \addlegendentry{BCWS}
+\addplot[kbamber,mark=*] coordinates {(0,0) (5,30) (10,90)}; \addlegendentry{ACWP}
+\addplot[kbmagenta,mark=square*] coordinates {(0,0) (5,25) (10,80)}; \addlegendentry{BCWP}
+\draw[kbguide,dashed] (axis cs:10,0)--(axis cs:10,200);
+\end{axis}
+\end{tikzpicture}
+At week 10 earned value (80) lies below both plan (100) and actual cost (90).

@@ -1,0 +1,75 @@
+:PROPERTIES:
+:ID:       project-governance
+:DOMAIN:   projects
+:AREA:     project-management
+:KIND:     definition
+:REQUIRES: project-foundations organizational-structures
+:SEE:      critical-path business-map
+:ALIASES:  RACI project-manager PMO matrice fattori-di-successo
+:END:
+#+title: RACI, the project manager and the PMO
+#+summary: Projects borrow resources from functions through a matrix; RACI assigns who is Responsible, Accountable, Consulted and Informed; the project manager coordinates resources towards time, cost and quality goals; the PMO governs the project portfolio.
+
+* Model
+** Matrix organization
+| Functional manager                     | Project manager                   |
+|----------------------------------------+-----------------------------------|
+| keeps the function's efficiency and    | directs the available resources   |
+| effectiveness standards                |                                   |
+| manages, maintains and grows resources | pursues project objectives        |
+| and skills                             |                                   |
+| makes skills available to projects     | coordinates people and activities |
+|                                        | across functions                  |
+Pros: maximizes use of skills, flexibility. Cons: priority conflicts, dual
+reporting, coordination complexity. See [[id:organizational-structures][matrix structure]].
+
+** RACI
+| Letter | Role        | Meaning                                        |
+|--------+-------------+------------------------------------------------|
+| R      | Responsible | does the work, completes the activity          |
+| A      | Accountable | guarantees it is done; *only one* per activity |
+| C      | Consulted   | gives input/feedback, actively involved        |
+| I      | Informed    | is told the result, passive                    |
+
+** The project manager
+Once associated with military, infrastructure and technical projects; today the
+person who identifies, commits and coordinates resources to reach cost, time and
+quality objectives. Responsibilities: work and deliverable quality; people
+(assignment, motivation, development); time and cost; communication with team,
+sponsor and stakeholders. Competences: *strategic vision* (global view),
+*predictive capacity* (anticipate market, client, problems), *coordination*
+(heterogeneous resources, constructive climate), *leadership* (motivate and
+delegate while keeping control), *negotiation* (mediate stakeholders, conflicts,
+priorities).
+
+** Project Management Office (PMO)
+Organizational unit for centralized, coordinated direction of projects: formal
+authority over projects and PMs; sets execution priorities; allocates shared
+resources; delegates authority to PMs with administrative support;
+standardizes methods, templates, best practice; capitalizes knowledge (lessons
+learned, portfolio KPIs).
+
+** Success factors
+Good PM with leadership and vision; clear, shared objectives; top-management
+support; involvement of the people concerned (employees, customers); adequate
+technical skills; effective, continuous communication; problem-solving and
+troubleshooting ability. Take-away: people, communication and clear objectives
+matter more than technique.
+
+* Worked example
+RACI for the KM system:
+| Activity         | PM | IT lead | Sales mgr | Trainer | Sponsor |
+|------------------+----+---------+-----------+---------+---------|
+| Install systems  | A  | R       | I         |         | I       |
+| Design screen    | A  | R       | C         |         |         |
+| Train user group | A  | C       | C         | R       |         |
+| Pilot test       | R  | C       | C         |         | A       |
+Each row has exactly one A; the sponsor is accountable for accepting the pilot.
+
+* Pitfall
+Two A's on one activity mean nobody is accountable. R and A can be the same
+person, but must be stated. A PMO is not a project team.
+
+* Recall
+Contrast functional and project managers; define RACI with the one-A rule; list
+five PM competences and five PMO functions; name five success factors.

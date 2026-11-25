@@ -1,0 +1,83 @@
+:PROPERTIES:
+:ID:       value-analysis
+:DOMAIN:   marketing
+:AREA:     product-development
+:KIND:     definition
+:REQUIRES: new-product-development
+:SEE:      total-cost-of-ownership business-map
+:ALIASES:  analisi-del-valore FAST value-engineering job-plan funzioni
+:END:
+#+title: Functional analysis, FAST and value
+#+summary: Value is the ratio between satisfaction of needs and resources used (UNI EN 12973); value analysis is a team-based, functional and economic method organized in a five-phase job plan, and FAST diagrams order functions with How?/Why? logic.
+
+* Definition
+\[ \text{Value} \;\propto\; \frac{\text{satisfaction of needs}}{\text{use of resources}} \]
+(UNI EN 12973:2003). The symbol \( \propto \) means a symbolic ratio aiming at the
+most favourable balance, not an exact division.
+*Value analysis* (EN 1325-1): an organized and creative approach using a
+*functional and economic* procedure to increase the value of a "VA object" — an
+existing product or one under development — carried out by a *VA team* following
+a *VA job plan*.
+
+* Model
+** Job plan
+| Phase              | Key questions                                     |
+|--------------------+---------------------------------------------------|
+| Information        | What is the problem? Which data are available?    |
+| Functional         | What are the functions? How are they linked?      |
+| Creative           | Which alternative ideas/solutions exist?          |
+| Analytic-selective | Which alternatives raise value most? Which can be |
+|                    | implemented?                                      |
+| Presentation       | Costs and benefits? Which actions, by whom?       |
+
+** Functions and the FAST diagram
+Describe functions with *verb + noun*. Lighter example (input: open lid;
+output: burn tobacco):
+| Function            | Role                               |
+|---------------------+------------------------------------|
+| Burn tobacco        | primary function (output)          |
+| Generate flame      | secondary (how the primary is met) |
+| Trigger spark       | how flame is generated             |
+| Turn ignition wheel | how spark is triggered             |
+| Burn fuel           | how flame is generated             |
+| Vaporize fuel       | how fuel burns                     |
+| Ensure flame        | supporting                         |
+| Ensure robustness   | supporting                         |
+| Open lid            | input                              |
+FAST (Function Analysis System Technique): read *left → right* asking *How?*,
+right → left asking *Why?*. Each function's cost can then be compared with its
+importance to locate low-value functions.
+
+* Worked example
+Results reported: *Toyota Corolla engine* VE project (problems: rising material
+costs, production time) → engine 10% lighter, 25% fewer parts, faster assembly,
+lower consumption and emissions, 15% more power, production cost USD 1,000 lower
+than 1997. *Fiat Research Centre*: cost reductions of 22% and 12% on two car
+models.
+Numerical: a function costs EUR 8 and customers rate its importance at 5% of a
+EUR 100 product; another costs EUR 2 at 20%. Value index (importance share /
+cost share): \( 0.05/0.08 = 0.63 \) vs \( 0.20/0.02 = 10 \) — redesign the first.
+
+* Pitfall
+Value analysis is not cost cutting: removing a function customers need lowers
+value. Primary function = why the product exists; supporting functions do not
+directly serve it.
+
+* Recall
+Write the value ratio; list the five job-plan phases with one question each;
+build the lighter FAST with How/Why.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth},f/.style={draw=kbcyan,align=center,text width=1.6cm,minimum height=0.7cm}]
+\node[f,draw=kbamber] (o) at (0,0) {Burn tobacco};
+\node[f] (g) at (2.4,0) {Generate flame};
+\node[f] (t) at (4.8,0.7) {Trigger spark};
+\node[f] (w) at (7.2,0.7) {Turn ignition wheel};
+\node[f] (b) at (4.8,-0.7) {Burn fuel};
+\node[f] (v) at (7.2,-0.7) {Vaporize fuel};
+\node[f,draw=kbviolet] (l) at (9.6,0) {Open lid};
+\draw (o)--(g); \draw (g)--(t); \draw (t)--(w); \draw (g)--(b); \draw (b)--(v); \draw (w)--(l); \draw (v)--(l);
+\draw[->,kbguide] (0,1.5)--(9.6,1.5) node[midway,above] {HOW?};
+\draw[<-,kbguide] (0,-1.5)--(9.6,-1.5) node[midway,below] {WHY?};
+\end{tikzpicture}
+Left to right answers "how?", right to left answers "why?".

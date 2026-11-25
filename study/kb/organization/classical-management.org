@@ -1,0 +1,99 @@
+:PROPERTIES:
+:ID:       classical-management
+:DOMAIN:   organization
+:AREA:     theories
+:KIND:     definition
+:REQUIRES: organization-and-performance
+:SEE:      motivation-and-leadership contingency-theory business-map
+:ALIASES:  Taylor Fayol Weber scientific-management burocrazia scuola-classica
+:END:
+#+title: Taylor, Fayol and Weber
+#+summary: The classical school (deterministic, focused on the subject) explains performance through scientific task design (Taylor), administrative management (Fayol) and legal-rational bureaucracy (Weber).
+
+* Model
+** Map of organizational theories
+Early theories arise with the Industrial Revolution and the factory system.
+Theories can study the *subject* (people inside structures) or *systems*
+(entities formed by interactions), with a *deterministic* approach (economic,
+bureaucratic or administrative rationality) or a *possibilistic* one
+(individual motivations, perceptions, behaviour).
+| Focus   | Deterministic                | Possibilistic                       |
+|---------+------------------------------+-------------------------------------|
+| Subject | Classical school             | Motivational; organizational action |
+| Systems | Functionalism, neo-institut. | Contingency; transaction costs      |
+The classical school contains three theories: Taylor's scientific management,
+Fayol's administrative theory, Weber's bureaucratic theory.
+
+** Taylor — Scientific Management (1911)
+Born in North America, aimed at the industrial workforce. Four principles:
+1. *development of knowledge on a scientific basis*: break down and measure the
+   content of each job; workers' know-how is formalized into rules, laws and
+   objective formulas;
+2. *scientific selection of the workforce*: know skills, knowledge, output,
+   limits and potential;
+3. *training and improvement of workers* on scientific bases
+   (examine → instruct → train);
+4. *cooperation between managers and workforce*: workers execute predetermined
+   rules with will and determination; employers judge fairly.
+In each principle the movement is from *empirical* to *scientific* organization.
+Operating mechanisms: time and methods study, standardization of operations,
+material flow design, functional structure, *principle of exception* (only
+exceptions go up the hierarchy), defined task paid by *piece rate* (/cottimo/),
+production cost calculation. Iconic image: the Ford assembly line.
+Critique: based on technological and scientific constraints; ignores human,
+social and relational aspects; the organization is not a linear, planned
+machine; unpredictability requires learning and adaptation.
+
+** Fayol — Administrative theory (1841–1925)
+French, interested in the managerial class; makes *direction* scientific:
+forecasting, organizing, commanding, coordinating and controlling.
+Six functions of the enterprise:
+| Function       | Content                                                   |
+|----------------+-----------------------------------------------------------|
+| Technical      | production, transformation                                |
+| Commercial     | purchasing, sales                                         |
+| Security       | protection of goods and people                            |
+| Administrative | accounting, financial statements, inventory, costs, stats |
+| Financial      | raising and managing capital                              |
+| Directive      | planning, organizing, commanding, coordinating, control   |
+Principles: centralization (division of work, discipline, *unity of command*,
+*unity of direction*); order (hierarchy); equity, subordination of the
+particular interest to the general one; stability and cohesion of personnel;
+initiative. He proposes scientific criteria for organizing work *and* the
+management bodies of the firm.
+
+** Weber — Bureaucratic theory
+Bureaucracy is the administrative apparatus for exercising *legal* authority.
+Elements: division of labour regulated by general rules; hierarchy of offices;
+general rules governing decisions and actions; uniform behaviour;
+impersonal internal and external relations. Weber studies the structure of
+authority and bureaucracy.
+
+* Example
+| Situation                                  | Classical tool                     |
+|--------------------------------------------+------------------------------------|
+| repetitive assembly with high variance     | Taylor: time and methods study     |
+| a launch needing several functions aligned | Fayol: unity of direction          |
+| traceable spending in public procurement   | Weber: rules, authorization limits |
+
+* Pitfall
+Taylor's unit of analysis is the *task/worker*, Fayol's the *whole firm's
+management*, Weber's the *authority structure*. Do not credit Taylor with
+participative management: his "cooperation" means executing scientific rules.
+
+* Recall
+Draw the subject/system × deterministic/possibilistic table; list Taylor's four
+principles and seven mechanisms, Fayol's six functions, Weber's five elements,
+and one critique of Taylor.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[kbcyan] (0,0) rectangle (8,4); \draw (4,0)--(4,4); \draw (0,2)--(8,2);
+\node at (2,4.35) {Deterministic}; \node at (6,4.35) {Possibilistic};
+\node[rotate=90] at (-0.35,3) {Subject}; \node[rotate=90] at (-0.35,1) {Systems};
+\node[align=center] at (2,3) {Classical school\\Taylor, Fayol, Weber};
+\node[align=center] at (6,3) {Human relations,\\motivation (Mayo, Maslow)};
+\node[align=center] at (2,1) {Functionalism\\neo-institutionalism};
+\node[align=center] at (6,1) {Contingency\\transaction costs};
+\end{tikzpicture}
+Organizational thought moves from the top-left box towards the right and the bottom.

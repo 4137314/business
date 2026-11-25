@@ -1,0 +1,119 @@
+:PROPERTIES:
+:ID:       organization-and-performance
+:DOMAIN:   organization
+:AREA:     foundations
+:KIND:     definition
+:REQUIRES:
+:SEE:      business-processes financial-statements business-map
+:ALIASES:  organizzazione efficacia efficienza performance utile redditività
+:END:
+#+title: Organizations, resources and performance
+#+summary: An organization deliberately divides and coordinates work to reach objectives; effectiveness compares actual with expected results, efficiency compares outputs with inputs.
+
+* Definition
+Tonchia (2015) defines an organization (/organizzazione/) as a complex social entity,
+deliberately designed, structured and coordinated, guided by objectives, made of
+people who divide work to make it more productive, according to a hierarchy,
+norms and precise roles, in relation with the external environment.
+
+Organizing means four concrete tasks:
+1. define the activities to be carried out;
+2. create organizational units for them, placed on different levels;
+3. coordinate all the activities of the firm;
+4. regulate tasks, responsibilities and powers of each unit (/organo/).
+
+* Model
+** Resources (fattori produttivi)
+| Resource bought with capital | Italian label       | Accounting nature        |
+|------------------------------+---------------------+--------------------------|
+| Materials and services       | consumabili         | cost of the period       |
+| Machines, plant, equipment   | beni ammortizzabili | depreciated over years   |
+| Personnel                    | risorse umane       | wages, skills, knowledge |
+Other resources to name at the exam: information, knowledge, brand, technology,
+relationships with customers and suppliers, financial capital.
+
+** Two dimensions of the division of labour
+- *Vertical* (hierarchy): assigns decision power and authority to units and
+  defines hierarchical relations. Line units command; *staff* units have no
+  formal hierarchical power, sit beside the line and give specialist advice
+  (legal office, planning, quality assurance).
+- *Horizontal* (specialization): defines tasks and areas, grouping them
+  - by *input* (function/technique) → functional (/plurifunzionale/) structure;
+  - by *output* (product family, region, customer, channel) → multidivisional;
+  - by *input and output* together → matrix.
+  See [[id:organizational-structures][the structure models]].
+
+** The three organizational variables
+Organizational structure, operating systems (planning, control, reward,
+information systems) and leadership style (/stile di comando/). The structure
+defines the units, the functions assigned to them and the relations of
+dependence and collaboration among them; it is drawn as an organization chart
+(/organigramma/), and is *centralized* or *decentralized* according to how much
+decision power and autonomy are delegated down the hierarchy.
+
+** Effectiveness and efficiency
+\[ \text{Effectiveness (efficacia)} = \frac{\text{actual outputs}}{\text{expected outputs}}
+\qquad
+\text{Efficiency (efficienza)} = \frac{\text{outputs obtained (revenue)}}{\text{inputs used (cost)}} \]
+Organizational choices aim at *maximum effectiveness compatible with a high
+degree of efficiency*: doing the right things, and doing them without waste.
+
+** Performance
+\[ \text{Profit (utile)} = \text{Revenue} - \text{Costs} \qquad
+   \text{Profitability (redditività)} = \frac{\text{Profit}}{\text{Investment}} \]
+Both depend on three sources:
+| Source                   | Content                               | Controllable? |
+|--------------------------+---------------------------------------+---------------|
+| Core (caratteristica)    | typical operating activities          | yes           |
+| Non-core (extra-caratt.) | financial activities to raise capital | partly        |
+| Context (congiuntura)    | institutional and market factors      | no            |
+
+Management acts through *operating levers* — technological (production and IT),
+organizational (people, structure) and managerial (TQM, Lean, project
+management). Levers move *operating performance*:
+- internal, invisible to the customer: *cost* (costs, productivity) and
+  *non-cost* (quality, time, flexibility);
+- external, visible to the customer: product/service performance and satisfaction.
+Internal non-cost performance drives external performance, hence revenue and
+profit; cost performance drives profitability directly (see Picture).
+
+** Firm, enterprise, company and environment
+- /Azienda/: the material side, the deployment of resources;
+- /Impresa/: the entrepreneurial activity;
+- /Società/: the legal form that makes the two concrete
+  ([[id:ownership-and-governance][governance]]).
+The firm operates in an *environment* (context), exchanges resources in four
+*markets* — supply (/approvvigionamento/), capital, labour, sales — and competes
+inside *industries* (/settori/), analysed with [[id:five-forces][Porter's five forces]].
+
+* Worked example
+Planned output 1,000 units, actual 900 → effectiveness \( 900/1000 = 90\% \).
+Revenue EUR 450,000 for costs EUR 400,000 → efficiency \( 1.125 \): every euro
+of input returns EUR 1.125. Profit EUR 50,000 on an investment of EUR 500,000 →
+profitability \( 10\% \).
+A help desk solves 80 requests in 40 hours (2/h); after a change, 100 in 40 hours
+(2.5/h) but 30 are reopened: efficiency rises, effectiveness (first-time
+resolution 70%) falls. Always pair one measure of each kind.
+
+* Pitfall
+Efficiency is not effectiveness: a cheap process that misses its objective is
+ineffective. Profit (absolute) is not profitability (relative to investment), and
+neither guarantees liquidity.
+
+* Recall
+Define organization (Tonchia), list the four organizing tasks, write both ratios,
+and explain the chain lever → internal non-cost performance → external
+performance → revenue → profit.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},box/.style={draw=kbcyan,rounded corners,align=center,minimum height=0.9cm,text width=3.2cm}]
+\node[box] (lev) at (0,0) {Operating levers\\technological, organizational, managerial};
+\node[box] (nc) at (4.6,0.9) {Internal non-cost\\quality, time, flexibility};
+\node[box] (c) at (4.6,-0.9) {Internal cost\\costs, productivity};
+\node[box] (ext) at (9.2,0.9) {External performance\\customer satisfaction};
+\node[box,draw=kbamber] (rev) at (13.4,0.9) {Revenue \(\rightarrow\) profit};
+\node[box,draw=kbamber] (red) at (13.4,-0.9) {Profitability\\profit / investment};
+\draw[->] (lev)--(nc); \draw[->] (lev)--(c); \draw[->] (nc)--(ext); \draw[->] (ext)--(rev);
+\draw[->] (c)--(red); \draw[->] (rev)--(red);
+\end{tikzpicture}
+Non-cost performance works through the customer; cost performance works through margins.

@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       bullwhip-effect
+:DOMAIN:   operations
+:AREA:     supply-chain
+:KIND:     definition
+:REQUIRES: supply-chain-management
+:SEE:      pull-and-kanban business-map
+:ALIASES:  bullwhip effetto-frusta collaborative-forecasting VMI
+:END:
+#+title: The bullwhip effect
+#+summary: Order variability is amplified moving upstream in the supply chain; it raises production, inventory, transport costs and lead times, and is reduced by sharing demand information, shorter lead times, collaborative forecasting, VMI and supply contracts.
+
+* Definition
+The bullwhip effect: orders to the supplier fluctuate more than sales to the
+customer, and the distortion propagates *upstream in amplified form*. Like the
+"butterfly effect": a small change downstream becomes a large swing upstream.
+It is a supply-chain inefficiency; information plays the critical role.
+Uncertainty sources beyond demand: lead times, production yields, transport
+times, natural disasters, component availability.
+
+* Model
+Effects on performance: total profit falls; production costs rise (excess
+capacity or stock to absorb swings); inventory costs rise; replenishment lead
+times lengthen, with shortages when capacity and stock cannot cover orders;
+transport costs rise (excess transport capacity).
+
+| Countermeasure            | How it helps                                  |
+|---------------------------+-----------------------------------------------|
+| E-commerce, internet      | upstream sees accurate demand; shorter order  |
+|                           | processing                                    |
+| Express delivery          | shorter lead time, less demand variance       |
+| Collaborative forecasting | one shared forecast of end-customer demand    |
+| Vendor-managed inventory  | supplier sees downstream demand directly, not |
+|                           | only orders                                   |
+| Supply contracts          | aligned incentives, agreed supply limits      |
+Typical causes (standard literature): demand forecast updating at each stage,
+order batching, price fluctuations and promotions, rationing and shortage
+gaming.
+
+* Worked example
+Weekly consumer demand 100, 100, 120, 100. The retailer, reading +20% as a
+trend and covering two weeks of lead time, orders 100, 100, 160, 80; the
+wholesaler, doing the same on the retailer's orders, orders 100, 100, 220, 40;
+the factory sees swings of ±120 from a ±20 change. Sharing point-of-sale data
+lets every stage plan on the true 100–120.
+
+* Pitfall
+Bullwhip is not caused by end-customer volatility alone: it is created by the
+chain's own decision rules and lead times.
+
+* Recall
+Define bullwhip; list five performance effects and five countermeasures; work
+the three-stage example.
+
+* Picture
+\begin{tikzpicture}[font=\small]
+\begin{axis}[width=9cm,height=5cm,xlabel={week},ylabel={units},legend pos=north west,ymin=0,ymax=240]
+\addplot[mark=*] coordinates {(1,100) (2,100) (3,120) (4,100)}; \addlegendentry{consumer}
+\addplot[mark=square*] coordinates {(1,100) (2,100) (3,160) (4,80)}; \addlegendentry{retailer orders}
+\addplot[mark=triangle*] coordinates {(1,100) (2,100) (3,220) (4,40)}; \addlegendentry{wholesaler orders}
+\end{axis}
+\end{tikzpicture}
+Each stage amplifies the variability it receives.

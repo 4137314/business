@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       concept-comparisons
+:DOMAIN:   revision
+:AREA:     exam-practice
+:KIND:     example
+:REQUIRES: five-forces kraljic-matrix financial-statements critical-path
+:SEE:      volume-variety-processes business-map
+:ALIASES:
+:END:
+#+title: Distinctions to explain without notes
+#+summary: Good answers identify the decision, define the model, apply it to a case and explain its limits; these pairs and model outlines cover the distinctions most likely to be asked.
+
+* Practice
+For each pair, define both terms, explain the distinction and give the course
+example.
+| #  | Pair                                 | Key distinction                       |
+|----+--------------------------------------+---------------------------------------|
+| 1  | Efficiency / effectiveness           | output/input vs actual/expected       |
+| 2  | Function / process                   | grouped expertise vs end-to-end flow  |
+| 3  | Functional / divisional / matrix     | input/output/both (Apple, GE, Nike)   |
+| 4  | Line / staff                         | hierarchical power vs advice          |
+| 5  | Taylor / Fayol / Weber               | task / management / authority         |
+| 6  | Maslow / Herzberg                    | needs ladder vs hygiene–motivators    |
+| 7  | Consultative / participative         | who finally decides                   |
+| 8  | Organic / mechanistic                | unstable vs stable environment        |
+| 9  | Market / hierarchy / hybrid          | transaction-cost governance           |
+| 10 | Strategy / tactics                   | war vs battles, reversibility         |
+| 11 | Corporate / business strategy        | where vs how to compete               |
+| 12 | S-C-P / Porter / RBV                 | structure-driven, two-way, resources  |
+| 13 | Rivalry / substitutes                | same product vs other product         |
+| 14 | Cost leadership / low price          | cost position vs pricing choice       |
+| 15 | Primary / support activities         | physical flow vs enabling             |
+| 16 | Need / want / demand                 | hunger, pizza, buying pizza           |
+| 17 | Selling / marketing concept          | factory out vs market in              |
+| 18 | Strategic / operational marketing    | analysis vs action (Lambin)           |
+| 19 | Segmentation/targeting/positioning   | divide, choose, place in mind         |
+| 20 | Undiff./differentiated/concentr.     | one plan, many plans, one segment     |
+| 21 | BCG / GE-McKinsey                    | 2 proxies vs weighted factors         |
+| 22 | BCG / Ansoff                         | what to fund vs where to grow         |
+| 23 | Style / design                       | look vs function                      |
+| 24 | Skimming / penetration               | high-then-low vs low launch price     |
+| 25 | Concept / package / process          | benefits, bundle, how it is made      |
+| 26 | QFD / FMEA / value analysis          | customer needs, failures, value ratio |
+| 27 | New task / modified / straight rebuy | novelty and uncertainty               |
+| 28 | Single / sole sourcing               | choice vs monopoly                    |
+| 29 | Vendor grid/TCO/ABC/Kraljic          | score, life cost, spend, spend + risk |
+| 30 | Buyer dominance/interdependence      | power-matrix positions (Fujimoto)     |
+| 31 | MTS / ATO / MTO / ETO                | position of the decoupling point      |
+| 32 | Push / pull                          | forecast vs consumption               |
+| 33 | Control / specification limits       | process voice vs customer voice       |
+| 34 | In control / capable                 | stable vs within tolerance (Cp)       |
+| 35 | BPR / TQM / Lean / Six Sigma         | radical vs incremental; waste vs      |
+|    |                                      | variation                             |
+| 36 | VA / NVA / BNVA                      | paid for, waste, required waste       |
+| 37 | Functional / innovative product      | Fisher: efficient vs responsive chain |
+| 38 | Decision support / automation        | who bears responsibility              |
+| 39 | Profit / cash                        | accrual vs cash basis                 |
+| 40 | Rateo / risconto                     | cash later vs cash already            |
+| 41 | MT / CCN                             | with or without inventory             |
+| 42 | ISP / IS                             | self-coverage vs external dependence  |
+| 43 | ROI / ROE                            | operating vs owners' return           |
+| 44 | EBITDA / EBIT / EBT                  | before D&A / interest / tax           |
+| 45 | WBS / Gantt / CPM                    | what, when, which is critical         |
+| 46 | Responsible / accountable            | does vs answers for (one A)           |
+| 47 | Cost variance / schedule variance    | BCWP − ACWP vs BCWP − BCWS            |
+
+* Model answers
+** Five forces for an industry (e.g. regional transport operator)
+1. Define the industry (regional passenger transport by bus).
+2. Rivalry: few operators, high fixed costs, public tenders → medium-high.
+3. Suppliers: bus makers and fuel are concentrated → medium.
+4. Buyers: regional authority buys the service in tenders → high.
+5. New entrants: tenders and fleet capital are barriers → low-medium.
+6. Substitutes: car, train, car-sharing → high.
+7. Conclusion: low attractiveness; strategy: cost leadership in tenders or
+   differentiation on punctuality/digital service; support with value-chain
+   activities (fleet maintenance, scheduling IT). Limits: static, single business.
+
+** Volume–variety analysis
+Place five settings: shipyard (project, fixed position), tool shop (jobbing,
+functional), bakery batches (batch, functional/cellular), car assembly (line),
+refinery (continuous). Explain why the layout follows the process and what
+happens off the diagonal (cost vs flexibility).
+
+** Purchasing portfolio
+Run ABC on spend, then place items in Kraljic: a class-C single-source spare
+can be a bottleneck; a class-A commodity is leverage. Choose sourcing: dual for
+leverage, partnership for strategic, buffers or redesign for bottleneck,
+simplification for non-critical.
+
+* Assessment
+An effective response contains a definition, a mechanism, a relevant example,
+a justified implication and a limitation. Review the weakest component before
+repeating the answer from memory.

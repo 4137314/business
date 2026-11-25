@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       contingency-theory
+:DOMAIN:   organization
+:AREA:     theories
+:KIND:     definition
+:REQUIRES: organizational-structures classical-management
+:SEE:      volume-variety-processes business-map
+:ALIASES:  contingenza Lawrence-Lorsch Woodward Chandler organico meccanico
+:END:
+#+title: Contingency and organizational fit
+#+summary: Contingency theory (1960–1970) says there is no one best organization: the right structure depends on environment, strategy, technology and size.
+
+* Definition
+Contingency theory is a behavioural theory of internal structure, developed in
+the United States, according to which there is no single most efficient type of
+leadership or organization: the model to prefer depends on contingent factors,
+internal and external. Four variants:
+
+* Model
+| Contingency   | Author          | Key finding                                  |
+|---------------+-----------------+----------------------------------------------|
+| Environmental | Lawrence-Lorsch | unstable → organic; stable → mechanistic     |
+| Strategic     | Chandler        | structure follows strategy                   |
+| Technological | Joan Woodward   | structure must match production technology   |
+| Dimensional   | (from Weber)    | size drives specialization and formalization |
+
+** Environmental (Lawrence and Lorsch)
+Contingent factors: technology, suppliers and distributors, customers and
+competitors, government, unions — the environment.
+- Firms in *unstable* (dynamic) environments are more productive with a *less
+  formalized, decentralized* structure, highly differentiated subsystems that are
+  strongly integrated with each other → *organic* system.
+- Firms in *stable* conditions work better with a *rigid, centralized* structure
+  and subsystems with clearly separated tasks → *mechanistic* system.
+
+** Strategic (Chandler)
+The organizational set-up depends more on the strategy adopted than on
+environment and technology: firms choose a strategy matching their positioning
+in the socio-economic context, and the structure follows it (e.g. product
+diversification → [[id:organizational-structures][multidivisional structure]]).
+
+** Technological (Woodward)
+No direct link between organization and success *in general*, but a good
+correlation between vertical structure and production technology. Classes:
+| Technology                      | Structure that fits                          |
+|---------------------------------+----------------------------------------------|
+| Unit and small-batch production | organic, few levels, skilled workers         |
+| Large-batch and mass production | mechanistic, Taylorist — most efficient here |
+| Process / continuous flow       | organic again, many levels, technical staff  |
+See also the [[id:volume-variety-processes][volume–variety matrix]].
+
+** Dimensional
+Large organizations compared with small ones show: high specialization and
+professionalization; wide use of planning and programming; high formalization;
+strong decentralization.
+
+* Method
+Describe the context (stability, strategy, technology, size) → derive the
+coordination requirement → choose structure → state the residual cost.
+
+* Example
+A car-body stamping plant (mass production, stable demand) fits standard
+methods and centralized planning. The same firm's electric-drive research
+group (unstable technology) needs lateral communication and delegated decisions.
+Both coexist if their interfaces are coordinated.
+
+* Pitfall
+Organic ≠ unstructured; mechanistic ≠ bad. Chandler's claim is "structure
+follows strategy", not the opposite. Size brings *both* more formalization and
+more decentralization.
+
+* Recall
+Name the four contingencies with author and finding; place Woodward's three
+technologies with the fitting structure.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth}]
+\draw[->] (0,0)--(8,0) node[below left] {environmental uncertainty};
+\draw[->] (0,0)--(0,3.6) node[above] {fit};
+\draw[kbcyan,thick] (0.3,3)..controls (3,2.8) and (5,0.8)..(7.6,0.4) node[right] {mechanistic};
+\draw[kbmagenta,thick] (0.3,0.6)..controls (3,0.9) and (5,2.8)..(7.6,3.1) node[right] {organic};
+\node at (1.5,-0.4) {stable}; \node at (6.5,-0.4) {dynamic};
+\end{tikzpicture}
+Lawrence and Lorsch: each structure fits a different region of uncertainty.

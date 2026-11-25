@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       process-layouts
+:DOMAIN:   operations
+:AREA:     process-design
+:KIND:     definition
+:REQUIRES: volume-variety-processes
+:SEE:      lean-management business-map
+:ALIASES:  layout posizione-fissa layout-funzionale layout-a-celle layout-a-linea
+:END:
+#+title: Fixed-position, functional, cellular and line layouts
+#+summary: Layout is the physical arrangement of resources; fixed-position, functional, cellular and line layouts fit increasing volume and decreasing variety.
+
+* Definition
+*Layout*: physical arrangement of human, technological and capital resources,
+aiming at "harmony" across the process. Evaluation criteria: safe operations,
+flow length, respect for staff, clarity, accessibility, use of space,
+flexibility, customer service. McDonald's layout evolved: indoor seating
+(1950s), drive-through (1970s), breakfast (1980s), play areas (late 1980s),
+kitchen redesign (1990s), self-service kiosks (2004), separate dining areas.
+
+* Model
+| Layout         | Idea                             | Fits    | Pros / cons          |
+|----------------+----------------------------------+---------+----------------------|
+| Fixed position | product stays, resources come to | proj.   | flexible, varied;    |
+|                | it (motorways, shipyards)        |         | very high unit cost, |
+|                |                                  |         | hard to schedule     |
+| Functional     | similar resources grouped;       | jobs,   | flexible; long       |
+|                | products follow different routes | batch   | flows, WIP, queues   |
+| Cellular       | resources for a product/customer | batch   | productive, teamwork |
+|                | family grouped in a cell         |         | less flexible, lower |
+|                |                                  |         | utilization          |
+| Line (product) | all products follow the same     | mass,   | low unit cost; not   |
+|                | sequence of resources            | contin. | robust to stoppages  |
+Fixed position: give space to contractors to minimize transport. Functional:
+in production, can accumulate work in progress and queues (e.g. machine shop
+departments: turning, milling, grinding).
+
+* Example
+Hospital: operating theatre for a complex surgery (fixed position), departments
+by speciality (functional), a day-surgery unit for cataracts (cell), mass
+vaccination centre (line).
+
+* Pitfall
+A cell is not a mini line for one product only: it serves a *family* with
+similar routing. Layout follows the process type — moving machines does not fix
+a wrong process choice.
+
+* Recall
+Match four layouts to process types; give two pros and cons each.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth}]
+\node at (1.5,3.2) {Functional};
+\foreach \x/\y/\t in {0/2/T,1.5/2/M,3/2/G,0/0.6/D,1.5/0.6/W,3/0.6/P}{\draw[kbcyan] (\x-0.4,\y-0.4) rectangle (\x+0.4,\y+0.4); \node at (\x,\y) {\t};}
+\draw[->,kbamber] (0,2)..controls (1,1.2)..(3,0.6); \draw[->,kbmagenta] (1.5,0.6)..controls (2.5,1.5)..(3,2);
+\node at (7,3.2) {Line};
+\foreach \x/\t in {5,6,7,8,9}{\draw[kbcyan] (\x-0.35,1.05) rectangle (\x+0.35,1.75);}
+\draw[->,kbamber,thick] (4.4,1.4)--(9.6,1.4);
+\end{tikzpicture}
+Functional layouts create crossing routes; lines create one straight flow.

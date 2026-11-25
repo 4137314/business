@@ -1,0 +1,93 @@
+:PROPERTIES:
+:ID:       supply-chain-management
+:DOMAIN:   operations
+:AREA:     supply-chain
+:KIND:     definition
+:REQUIRES: purchasing-process operations-objectives
+:SEE:      bullwhip-effect fisher-supply-chain business-map
+:ALIASES:  supply-chain SCOR source-make-deliver-return reverse-logistics cross-docking VMI Boeing-787 Dell Barilla
+:END:
+#+title: Supply-chain integration and global performance
+#+summary: Supply-chain management integrates suppliers, plants, warehouses and stores so goods are produced and distributed in the right quantities, places and times at minimum system cost; it faces conflicting objectives, complexity and uncertainty.
+
+* Definition
+SCM ensures the firm is supplied with what it needs to deliver what it sells:
+*source* (procurement) → *make* (operations) → *deliver* (logistics) →
+*return* (reverse logistics: collect, transport, sort for remanufacturing,
+refurbishing, reuse, recycling or disposal — key for the circular economy).
+"A supply chain consists of all parties involved, directly or indirectly, in
+fulfilling a customer request" (Chopra and Meindl 2004): manufacturers,
+suppliers, carriers, warehouses, retailers, customers; flows of products,
+money, information and services.
+Goal: efficient integration of suppliers, plants, warehouses and stores so
+goods are made and distributed *in the right quantities, at the right places,
+at the right time*, to *minimize total system cost* while meeting *service
+requirements*.
+
+* Model
+** Complexity: Boeing 787
+About 2.3 million parts; some (fuselage) made in-house, others (landing gear)
+by suppliers; 5,400 supplier plants including sub-suppliers; over 750 million
+parts and assemblies bought in 2012; 500,000 people along the chain; rigorous
+incoming inspection.
+
+** Key outcomes (Melnyk et al. 2010)
+| Outcome        | Content                                              |
+|----------------+------------------------------------------------------|
+| Cost           | cost reduction, efficiency, quality, delivery        |
+| Responsiveness | flexibility to demand, mix, volume, location changes |
+| Security       | physical security, traceability, fraud, safety       |
+| Sustainability | green chain, emissions, resources, social compliance |
+| Resilience     | risk management, continuity, fast recovery           |
+| Innovation     | new products and processes, innovative collaboration |
+Reference model: SCOR (plan, source, make, deliver, return).
+
+** Conflicting objectives
+| Unit          | Wants                                                  |
+|---------------+--------------------------------------------------------|
+| Purchasing    | stable volumes, flexible delivery times, little mix    |
+|               | variation, large quantities                            |
+| Manufacturing | long runs, high quality and productivity, low cost     |
+| Warehousing   | low stock, low transport cost, fast replenishment      |
+| Customers     | short lead times, high availability, huge variety, low |
+|               | prices                                                 |
+Optimization is hard: complex system, conflicting goals, dynamic, shifting
+power (e.g. HTC), changing over time.
+
+** Tools
+Global optimization: decision support systems, inventory control, network
+design, design for logistics, *cross docking* (Walmart: goods move from inbound
+to outbound trucks without storage), strategic alliances, supply contracts and
+incentives, *VMI* (vendor-managed inventory). Managing uncertainty: pull
+systems, risk pooling, centralization, postponement, alliances, collaborative
+forecasting. See [[id:bullwhip-effect][bullwhip]] and [[id:fisher-supply-chain][Fisher]].
+
+* Worked example
+*Dell direct model*: customer orders online → Dell hubs fed by suppliers and
+local suppliers → build to order. Challenges: no scale economies vs rivals,
+costly local production, growing complexity, falling corporate sales, need to
+strengthen B2C, Dell handles every request and failure (cost centre), less
+innovation → Dell later added retail channels.
+*Barilla*: 2020 goals — double revenue, cut supply-chain CO₂ by 50%; integrated
+procurement with DSS and *supply-chain contracts* linking seed suppliers,
+farmers and producer organizations to Barilla.
+New trends: global competition, offshoring and re-shoring, shorter life
+cycles, low-cost channels, stronger customers, e-business, sustainability and
+reverse chains.
+
+* Pitfall
+SCM is not only logistics: information flows matter as much as goods. Local
+optima (cheapest purchase, longest run) can raise total system cost.
+
+* Recall
+Define SCM and its goal; list SCOR processes, six outcomes and the conflicting
+objectives table; explain cross docking and VMI.
+
+* Picture
+\begin{tikzpicture}[font=\small,>={Stealth},b/.style={draw=kbcyan,rounded corners,minimum width=1.9cm,minimum height=0.8cm}]
+\node[b] (s) at (0,0) {Suppliers}; \node[b] (m) at (3,0) {Manufacturer}; \node[b] (w) at (6,0) {Warehouse}; \node[b] (r) at (9,0) {Retailer}; \node[b] (c) at (12,0) {Customer};
+\draw[->,thick] (s)--(m); \draw[->,thick] (m)--(w); \draw[->,thick] (w)--(r); \draw[->,thick] (r)--(c);
+\draw[->,kbamber] (12,-0.6)--(0,-0.6) node[midway,below] {information, money, returns};
+\node[above] at (6,0.5) {products};
+\end{tikzpicture}
+Goods flow downstream; information, money and returns flow upstream.

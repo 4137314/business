@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       pull-and-kanban
+:DOMAIN:   operations
+:AREA:     lean
+:KIND:     definition
+:REQUIRES: lean-management order-fulfilment
+:SEE:      supply-chain-management business-map
+:ALIASES:  JIT just-in-time push pull kanban scorte
+:END:
+#+title: Push, pull, JIT and Kanban
+#+summary: JIT synchronizes production with demand; push plans work on forecasts, pull triggers it from actual consumption; Kanban signals authorize upstream production; lower inventory exposes problems and speeds defect detection.
+
+* Definition
+*Just-in-time*: synchronize the production flow with demand — produce at the
+pace of customer demand, mixed-model (heijunka), small lots and short set-ups
+(SMED), pull instead of push, Kanban, make to order. Minimizes inventory and
+*exposes quality and process problems*.
+| Push                                   | Pull                                    |
+|----------------------------------------+-----------------------------------------|
+| based on forecasts, before real demand | based on actual demand, after seeing it |
+| work planned and pushed through each   | work pulled through the system by real  |
+| stage in anticipation of orders        | orders for final products               |
+
+* Model
+** Kanban
+Visual signal (card, container, digital) controlling flow with pull logic:
+1. the downstream process (assembly) consumes a part;
+2. this generates a Kanban signal;
+3. the signal goes upstream;
+4. upstream produces only the quantity requested;
+5. repeat.
+Aims: avoid over-production, reduce WIP, improve flow, make problems visible.
+Production is triggered by real consumption, not forecasts.
+Number of Kanbans (common sizing rule):
+\[ N = \frac{D \times L \times (1 + s)}{C} \]
+D demand rate, L lead time, s safety factor, C container size.
+
+** Lower inventory means better quality
+Eight units in the queue between two stations: a defect is discovered after
+7 minutes (information turnaround time ITAT = 7 × 1 min). With two units:
+ITAT = 2 minutes → fewer defective units produced before feedback.
+*River-and-rocks*: inventory is the water level; lowering it reveals the rocks —
+machine breakdowns, out-of-spec materials, quality problems, workload
+imbalances, worker absenteeism, material shortages.
+
+* Worked example
+D = 400 parts/day, L = 0.5 day, s = 10%, C = 20 parts:
+\( N = 400 \times 0.5 \times 1.1 / 20 = 11 \) cards. Cutting lead time to 0.25 day
+halves the cards (and WIP) to 5.5 → 6.
+
+* Pitfall
+Pull does not mean "no forecast at all" for capacity planning; it means
+execution is triggered by consumption. Removing stock without fixing the rocks
+just stops the line.
+
+* Recall
+Contrast push and pull; explain Kanban's five steps; compute ITAT for two queue
+sizes; draw the river and rocks.
+
+* Picture
+\begin{tikzpicture}[font=\scriptsize,>={Stealth}]
+\node[draw=kbcyan,minimum width=2cm,minimum height=0.9cm] (u) at (0,0) {Upstream};
+\node[draw=kbcyan,minimum width=2cm,minimum height=0.9cm] (d) at (5,0) {Downstream};
+\draw[->,thick] (u)--(d) node[midway,above] {parts};
+\draw[->,kbamber,thick] (d.south)..controls (3.5,-1.4) and (1.5,-1.4)..(u.south) node[midway,below] {Kanban: produce next unit};
+\end{tikzpicture}
+Material flows downstream; authorization flows upstream.
